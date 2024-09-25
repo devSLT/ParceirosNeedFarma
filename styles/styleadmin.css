@@ -5,9 +5,22 @@
     margin: 0;
     font-family: "Poppins", sans-serif!important;
 }
-.big-logo{
-    background-image: url("../images/logo/logo-svg.svg");
-    background-repeat: no-repeat;
-    background-size: 60%;
-    background-position: bottom left;
+
+.img-bg {
+    opacity: 0.5;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 10%;
+    top: 30%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.header{
+    padding-left: 5%;
+    padding-top: 4%;
+    height: 20vh;
+    background: rgb(43,113,182);
+    background: linear-gradient(15deg, rgba(43,113,182,1) 0%, rgba(116,184,68,1) 85%);
 }
