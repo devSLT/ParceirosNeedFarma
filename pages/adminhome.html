@@ -197,20 +197,357 @@
           <div class="card m-5 shadow border-0" style="width: 92%; height: 70%">
             <div class="card-body">
               <div class="row">
-              <p class="fs-3 mx-5 my-3 col-auto"><i>Gestão de Usuários</i></p>
-              <div class="ms-5 my-3 col-3">
-                <div class="input-group input-group-lg">
-                  <span class="input-group-text" id="inputGroup-sizing-lg"><i class="bi bi-search"></i></span>
-                  <input type="text" class="form-control" placeholder="Filtrar com..." aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                <p class="fs-3 mx-5 my-4 col-auto"><i>Gestão de Usuários</i></p>
+                <div class="ms-5 my-3 col-3">
+                  <div class="input-group input-group-lg">
+                    <span
+                      class="input-group-text rounded-start-pill"
+                      id="inputGroup-sizing-lg"
+                      ><i class="bi bi-search"></i
+                    ></span>
+                    <input
+                      type="text"
+                      class="form-control rounded-end-pill"
+                      placeholder="Filtrar com..."
+                      aria-label="Sizing example input"
+                      aria-describedby="inputGroup-sizing-lg"
+                    />
+                  </div>
+                </div>
+                <div class="mx-1 my-3 col-auto me-auto">
+                  <input
+                    class="btn btn-primary btn-lg border-0 rounded-pill"
+                    type="submit"
+                    value="Filtrar"
+                  />
+                </div>
+                <div
+                  class="my-1 mx-3 col-auto ms-auto btn-group"
+                  role="group"
+                  aria-label="Basic example"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-sm border-primary fs-5 mt-2 p-4 pt-1"
+                    style="max-height: 50%;"
+                  >
+                    <i class="fs-5 bi bi-floppy text-primary"></i> Exportar
+                  </button>
                 </div>
               </div>
-              <div class="mx-1 my-3 col-auto me-auto">
-                <input class="btn btn-primary btn-lg border-0" type="submit" value="Filtrar">
+              <div
+                class="btn-group ms-5"
+                role="group"
+                aria-label="Basic radio toggle button group"
+              >
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="btnradio"
+                  id="btnradio1"
+                  autocomplete="off"
+                  checked
+                />
+                <label
+                  class="btn btn-outline-secondary rounded-start-pill"
+                  for="btnradio1"
+                  >Ativado</label
+                >
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="btnradio"
+                  id="btnradio2"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-secondary" for="btnradio2"
+                  >Desativado</label
+                >
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="btnradio"
+                  id="btnradio3"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-secondary" for="btnradio3"
+                  >Em Análise</label
+                >
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="btnradio"
+                  id="btnradio4"
+                  autocomplete="off"
+                />
+                <label
+                  class="btn btn-outline-secondary rounded-end-pill"
+                  for="btnradio4"
+                  >Nenhum</label
+                >
               </div>
-              <div class="my-3 col-auto ms-auto btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-lg border-primary fs-4"><i class="fs-2 bi bi-floppy text-primary"></i> Exportar</button>
+              <table
+                class="table table-sm table-striped mt-3 mx-5"
+                style="width: 95%"
+              >
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Data</th>
+                    <th scope="col">Opções</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="align-middle">1</td>
+                    <td class="align-middle">Teste Teste Teste</td>
+                    <td class="align-middle">Ativado</td>
+                    <td class="align-middle">Farmácia</td>
+                    <td class="align-middle">00/00/0000</td>
+                    <td class="align-middle">
+                      <button type="button" class="btn btn-sm border-primary">
+                        <i class="bi bi-eye-fill text-primary"></i></button
+                      ><button
+                        type="button"
+                        class="btn btn-sm border-danger ms-1"
+                      >
+                        <i class="bi bi-trash-fill text-danger"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="align-middle">2</td>
+                    <td class="align-middle">Teste Teste Teste</td>
+                    <td class="align-middle">Ativado</td>
+                    <td class="align-middle">Farmácia</td>
+                    <td class="align-middle">00/00/0000</td>
+                    <td class="align-middle">
+                      <button type="button" class="btn btn-sm border-primary">
+                        <i class="bi bi-eye-fill text-primary"></i></button
+                      ><button
+                        type="button"
+                        class="btn btn-sm border-danger ms-1"
+                      >
+                        <i class="bi bi-trash-fill text-danger"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="align-middle">3</td>
+                    <td class="align-middle">Teste Teste Teste</td>
+                    <td class="align-middle">Ativado</td>
+                    <td class="align-middle">Farmácia</td>
+                    <td class="align-middle">00/00/0000</td>
+                    <td class="align-middle">
+                      <button type="button" class="btn btn-sm border-primary">
+                        <i class="bi bi-eye-fill text-primary"></i></button
+                      ><button
+                        type="button"
+                        class="btn btn-sm border-danger ms-1"
+                      >
+                        <i class="bi bi-trash-fill text-danger"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="align-middle">4</td>
+                    <td class="align-middle">Teste Teste Teste</td>
+                    <td class="align-middle">Ativado</td>
+                    <td class="align-middle">Farmácia</td>
+                    <td class="align-middle">00/00/0000</td>
+                    <td class="align-middle">
+                      <button type="button" class="btn btn-sm border-primary">
+                        <i class="bi bi-eye-fill text-primary"></i></button
+                      ><button
+                        type="button"
+                        class="btn btn-sm border-danger ms-1"
+                      >
+                        <i class="bi bi-trash-fill text-danger"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="align-middle">5</td>
+                    <td class="align-middle">Teste Teste Teste</td>
+                    <td class="align-middle">Ativado</td>
+                    <td class="align-middle">Farmácia</td>
+                    <td class="align-middle">00/00/0000</td>
+                    <td class="align-middle">
+                      <button type="button" class="btn btn-sm border-primary">
+                        <i class="bi bi-eye-fill text-primary"></i></button
+                      ><button
+                        type="button"
+                        class="btn btn-sm border-danger ms-1"
+                      >
+                        <i class="bi bi-trash-fill text-danger"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="align-middle">6</td>
+                    <td class="align-middle">Teste Teste Teste</td>
+                    <td class="align-middle">Ativado</td>
+                    <td class="align-middle">Farmácia</td>
+                    <td class="align-middle">00/00/0000</td>
+                    <td class="align-middle">
+                      <button type="button" class="btn btn-sm border-primary">
+                        <i class="bi bi-eye-fill text-primary"></i></button
+                      ><button
+                        type="button"
+                        class="btn btn-sm border-danger ms-1"
+                      >
+                        <i class="bi bi-trash-fill text-danger"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="align-middle">7</td>
+                    <td class="align-middle">Teste Teste Teste</td>
+                    <td class="align-middle">Ativado</td>
+                    <td class="align-middle">Farmácia</td>
+                    <td class="align-middle">00/00/0000</td>
+                    <td class="align-middle">
+                      <button type="button" class="btn btn-sm border-primary">
+                        <i class="bi bi-eye-fill text-primary"></i></button
+                      ><button
+                        type="button"
+                        class="btn btn-sm border-danger ms-1"
+                      >
+                        <i class="bi bi-trash-fill text-danger"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="align-middle">8</td>
+                    <td class="align-middle">Teste Teste Teste</td>
+                    <td class="align-middle">Ativado</td>
+                    <td class="align-middle">Farmácia</td>
+                    <td class="align-middle">00/00/0000</td>
+                    <td class="align-middle">
+                      <button type="button" class="btn btn-sm border-primary">
+                        <i class="bi bi-eye-fill text-primary"></i></button
+                      ><button
+                        type="button"
+                        class="btn btn-sm border-danger ms-1"
+                      >
+                        <i class="bi bi-trash-fill text-danger"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="align-middle">9</td>
+                    <td class="align-middle">Teste Teste Teste</td>
+                    <td class="align-middle">Ativado</td>
+                    <td class="align-middle">Farmácia</td>
+                    <td class="align-middle">00/00/0000</td>
+                    <td class="align-middle">
+                      <button type="button" class="btn btn-sm border-primary">
+                        <i class="bi bi-eye-fill text-primary"></i></button
+                      ><button
+                        type="button"
+                        class="btn btn-sm border-danger ms-1"
+                      >
+                        <i class="bi bi-trash-fill text-danger"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="align-middle">10</td>
+                    <td class="align-middle">Teste Teste Teste</td>
+                    <td class="align-middle">Ativado</td>
+                    <td class="align-middle">Farmácia</td>
+                    <td class="align-middle">00/00/0000</td>
+                    <td class="align-middle">
+                      <button type="button" class="btn btn-sm border-primary">
+                        <i class="bi bi-eye-fill text-primary"></i></button
+                      ><button
+                        type="button"
+                        class="btn btn-sm border-danger ms-1"
+                      >
+                        <i class="bi bi-trash-fill text-danger"></i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="row">
+                <div class="btn-group col-auto" role="group" style="margin-left: 75%">
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="btnradio"
+                    id="previous"
+                    autocomplete="off"
+                    checked
+                  />
+                  <label class="btn btn-sm btn-outline-secondary" for="previous"
+                    style="max-width: 20%"
+                    >Anterior</label
+                  >
+
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="btnradio"
+                    id="pg1"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-sm btn-outline-secondary" for="pg1"
+                    style="max-width: 8%"
+                    >1</label
+                  >
+
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="btnradio"
+                    id="pg2"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-sm btn-outline-secondary" for="pg2"
+                    style="max-width: 8%"
+                    >2</label
+                  >
+
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="btnradio"
+                    id="pg3"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-sm btn-outline-secondary" for="pg3"
+                    style="max-width: 8%"
+                    >3</label
+                  >
+
+                  <input
+                    class="btn btn-sm btn-outline-secondary"
+                    id="pg4"
+                    type="number"
+                    placeholder="..."
+                    style="max-width: 10%"
+                  />
+
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="btnradio"
+                    id="pg5"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-sm btn-outline-secondary" for="pg5"
+                    style="max-width: 20%"
+                    >Próximo</label
+                  >
+                </div>
               </div>
-            </div>
             </div>
           </div>
         </div>
