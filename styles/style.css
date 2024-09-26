@@ -4,11 +4,12 @@
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
 }
 
 body {
     overflow-x: hidden;
-    max-width: 100vw;
+    width: 100vw;
     height: max-content;
 }
 
@@ -16,6 +17,7 @@ header {
     display: flex;
     flex-direction: column;
     height: 15vh;
+    width: 100%;
 }
 
 header .header {
@@ -25,7 +27,7 @@ header .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1% 0 1%;
+    padding: 0 3vw 0 3vw;
 }
 
 header .header h1 {
@@ -61,7 +63,7 @@ header .subHeader ul {
 }
 
 header .subHeader ul li {
-    font-size: 1em;
+    font-size: calc(0.6rem + 0.5vw);
     font-weight: 500;
     transition: 0.3s;
     cursor: pointer;
@@ -72,7 +74,7 @@ header .subHeader ul li:hover {
 }
 
 main {
-    width: 99.1vw;
+    width: 100%;
     height: max-content;
     display: flex;
     flex-direction: column;
@@ -84,7 +86,7 @@ main {
 .bannerBox {
     width: 100%;
     height: 80vh;
-    background-color: #ffffff;
+    background-color: transparent;
     margin-top: 0px;
     display: flex;
     justify-content: center;
@@ -119,12 +121,12 @@ swiper-slide img {
 
 .about {
     width: 100%;
-    height: 62vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #6BC140;
+    background-color: #74B844;
 }
 
 .titleAbout {
@@ -136,7 +138,7 @@ swiper-slide img {
 }
 
 .titleAbout h1 {
-    font-size: 2rem;
+    font-size: calc(1rem + 0.9vw);
     font-weight: 500;
     color: white;
 }
@@ -147,6 +149,7 @@ swiper-slide img {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: red;
 }
 
 .aboutBox .box {
@@ -172,8 +175,7 @@ swiper-slide img {
 }
 
 .box .titleBox-about h2 {
-    font-size: 1.5rem;
-
+    font-size: calc(0.7rem + 0.7vw);
 }
 
 .box .titleBox-about h2 img {
@@ -198,7 +200,7 @@ swiper-slide img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 10vh;
 }
 
 .beneficios .title-beneficios {
@@ -210,7 +212,7 @@ swiper-slide img {
 }
 
 .beneficios .title-beneficios h1 {
-    font-size: 2rem;
+    font-size: calc(1rem + 0.9vw);
 }
 
 .beneficios .boxCard-beneficios {
@@ -246,7 +248,8 @@ swiper-slide img {
 }
 
 .titleCard-beneficios h2 {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
+    font-size: calc(0.45rem + 0.5vw);
     font-weight: 400;
 }
 
@@ -266,18 +269,22 @@ swiper-slide img {
     align-items: center;
 }
 
+.text-beneficios p {
+    font-size: calc(0.3rem + 0.5vw);
+}
+
 /* Configuracao Planos */
 
 .planos {
     width: 100%;
-    height: 62vh;
+    height: 65vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    background-color: #6BC140;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    background-color: #74B844;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
 .title-planos {
@@ -289,7 +296,7 @@ swiper-slide img {
 }
 
 .title-planos h2 {
-    font-size: 2rem;
+    font-size: calc(1rem + 0.9vw);
     font-weight: 500;
     color: white;
 }
@@ -326,14 +333,14 @@ swiper-slide img {
 }
 
 .card-planos .Hcard-planos h3 {
-    font-size: 1.3rem;
+    font-size: calc(0.5rem + 0.5vw);
     font-weight: 600;
     color: rgb(0, 0, 0);
 }
 
 .card-planos .Hcard-planos h4 {
     color: rgb(0, 0, 0);
-    font-size: 1rem;
+    font-size: calc(0.4rem + 0.4vw);
     font-weight: 400;
 }
 
@@ -358,7 +365,7 @@ swiper-slide img {
 
 .card-planos .contentCard-planos ul li {
     color: black;
-    font-size: 0.9rem;
+    font-size: calc(0.5rem + 0.4vw);
 }
 
 .card-planos .buttonCard-planos {
@@ -388,16 +395,17 @@ swiper-slide img {
 
 .duvidas {
     width: 100%;
-    height: 62vh;
+    min-height: 65vh;
+    max-height: max-content;
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 10vh;
 }
 
 .title-duvidas {
     width: 100%;
     height: 10%;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -405,7 +413,7 @@ swiper-slide img {
 }
 
 .title-duvidas h2 {
-    font-size: 2rem;
+    font-size: calc(1rem + 0.9vw);
     color: #000000;
 }
 
@@ -433,6 +441,7 @@ swiper-slide img {
     border-bottom: 1px solid #111;
     display: flex;
     justify-content: space-between;
+    font-size: calc(0.5rem + 0.5vw);
 }
 
 .textDrop {
@@ -443,11 +452,184 @@ swiper-slide img {
 }
 
 .textDrop p {
-    font-size: 1rem;
+    font-size: calc(0.5rem + 0.5vw);
     text-align: justify;
 }
 
 .textDrop.active {
     max-height: max-content;
     opacity: 1;
+}
+
+/* Config AD */
+
+.ad {
+    width: 80%;
+    height: 50vh;
+    background-color: #74B844;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    margin-bottom: 10vh;
+}
+
+.ad h2 {
+    font-size: calc(0.8rem + 1vw);
+    font-weight: 500;
+    margin-bottom: 1vh;
+    text-align: center;
+}
+
+.ad h3 {
+    font-size: calc(0.4rem + 0.6vw);
+    font-weight: 400;
+    margin-bottom: 3vh;
+    text-align: center;
+}
+
+.ad a {
+    width: calc(15% + 30px);
+    background-color: rgb(255, 255, 255);
+    padding: 1.8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #111111;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    font-size: calc(0.5rem + 0.5vw);
+    font-weight: 500;
+    text-align: center;
+    transition: ease-out 0.3s;
+}
+
+.ad a:hover {
+    scale: 1.03;
+}
+
+/* Config Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 40vh;
+    background-color: #F2F3F5;
+    color: #111;
+}
+
+.opts-footer {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.opts-footer ul {
+    width: 20%;
+    height: 100%;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: start;
+    padding-top: 40px;
+    flex-direction: column;
+}
+
+.opts-footer ul li {
+    margin: 0.7vh;
+    font-size: calc(0.45rem + 0.5vw);
+    cursor: pointer;
+    transition: ease-in 0.3s;
+}
+
+.opts-footer ul li:hover {
+    text-decoration: underline;
+    color: #2B71B6;
+}
+
+.opts-footer ul li a {
+    text-decoration: none;
+    padding-left: 5px;
+    color: #111;
+}
+
+.opts-footer ul li h3 {
+    font-size: calc(0.45rem + 0.5vw);
+}
+
+.copyright-footer {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright-footer h4 {
+    font-size: calc(0.4rem + 0.4vw);
+    font-weight: 400;
+}
+
+/* Media queries */
+
+@media screen and (max-width:1400px) {
+
+    /* .about */
+
+    .aboutBox {
+        width: 100%;
+    }
+
+    .aboutBox .box {
+        width: 20%;
+        height: 80%;
+    }
+
+    .box .titleBox-about h2 {
+        font-size: calc(0.5rem + 0.8vw);
+    }
+
+    .box .titleBox-about h2 img {
+        width: 34px;
+    }
+
+    .box .contentBox-about {
+        text-align: center;
+    }
+
+    .box .contentBox-about ul li {
+        text-align: left;
+        font-size: calc(0.3rem + 0.8vw);
+    }
+
+    .box .contentBox-about p {
+        font-size: calc(0.3rem + 0.8vw);
+    }
+
+    /* Config planos */
+
+    .card-planos .Hcard-planos h3 img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .card-planos {
+        width: 30%;
+    }
+
+    /*Config footer */
+
+    .opts-footer ul li img{
+        width: 18px;
+        height: 18px;
+    }
 }
