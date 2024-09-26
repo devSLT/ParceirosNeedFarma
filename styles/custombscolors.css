@@ -14,3 +14,10 @@
 .text-primary{
     color: var(--primary)!important;
 }
+.border-primary{
+    border-color: var(--primary)!important;
+    color: var(--primary)!important;
+}
+.border-primary:hover{
+    background-color: rgba(116, 184, 68, 0.2)!important;
+}
