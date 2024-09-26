@@ -149,7 +149,6 @@ swiper-slide img {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: red;
 }
 
 .aboutBox .box {
