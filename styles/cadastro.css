@@ -6,7 +6,7 @@
     font-family: "Poppins", sans-serif;
 }
 
-main{
+main {
     width: 100vw;
     height: max-content;
     display: flex;
@@ -14,7 +14,7 @@ main{
     background: linear-gradient(188deg, #74B844, #519382, #458697, #3271b9);
 }
 
-.boxImage{
+.boxImage {
     width: 37%;
     height: 100vh;
     overflow: hidden;
@@ -23,15 +23,15 @@ main{
     border-bottom-right-radius: 60px;
 }
 
-.boxAcount{
+.boxAcount {
     width: 63%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}   
+}
 
-.contentAcount{
+.contentAcount {
     width: 50%;
     height: 90%;
     border-radius: 15px;
@@ -39,7 +39,7 @@ main{
     background-color: white;
 }
 
-.headerAcount{
+.headerAcount {
     width: 100%;
     height: 13%;
     display: flex;
@@ -47,19 +47,19 @@ main{
     align-items: center;
 }
 
-.headerAcount img{
+.headerAcount img {
     width: 50%;
     height: 100%;
     color: #111;
 }
 
-.mainAcount{
+.mainAcount {
     width: 100%;
     height: 85%;
     border-radius: 15px;
 }
 
-.boxInputs{
+.boxInputs {
     width: 100%;
     height: 100%;
     display: flex;
@@ -68,23 +68,23 @@ main{
     align-items: center;
 }
 
-.boxInputs input{
+.boxInputs input {
     width: 80%;
     padding: 10px;
     margin-bottom: 15px;
     background-color: transparent;
     border: none;
-    border:1px solid #ddd;
+    border: 1px solid #ddd;
     border-radius: 15px;
 }
 
-.boxInputs label{
+.boxInputs label {
     font-size: calc(0.4rem + 0.5vw);
     align-self: self-start;
     margin-left: 80px;
 }
 
-.boxInputs button{
+.boxInputs button {
     width: 50%;
     padding: 10px;
     background: linear-gradient(188deg, #74B844, #519382, #458697, #3271b9);
@@ -98,8 +98,18 @@ main{
     cursor: pointer;
 }
 
-.boxInputs button:hover{
+.boxInputs button:hover {
     scale: 1.03;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
+@media screen and (max-height:840px) {
+    
+    .contentAcount{
+        height: 100%;
+    }
+    
+    .boxInputs input {
+        padding: 5px;
+    }
+}
