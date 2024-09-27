@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/cadastro.css">
-    <title>Cadastro</title>
+    <link rel="stylesheet" href="../styles/login.css">
+    <title>Login</title>
 </head>
 
 <body>
@@ -20,31 +20,21 @@
                 </div>
                 <div class="mainAcount">
                     <form action="" class="boxInputs">
-                        <label for="businessName">Nome da Empresa:</label>
-                        <input type="text" name="businessName" id="businessName">
-
                         <label for="email">E-mail:</label>
                         <input type="email" name="email" id="email">
-
-                        <label for="businessPhone">Telefone Comercial:</label>
-                        <input type="tel" name="businessPhone" id="businessPhone">
-
-                        <label for="businessPhone">WhatsApp:</label>
-                        <input type="tel" name="phone" id="phone">
-
-                        <label for="cnpj">CNPJ:</label>
-                        <input type="text" name="cnpj" id="cnpj">
-
-                        <label for="cep">CEP:</label>
-                        <input type="text" name="cep" id="cep">
-
-                        <label for="cep">Endereço Completo:</label>
-                        <input type="text" name="businessAdress" id="businessAdress">
 
                         <label for="password">Senha:</label>
                         <input type="password" name="password" id="password">
 
-                        <button type="submit">Cadastrar-se</button>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="remember" id="remember">
+                                <span>Lembrar de mim</span>
+                            </li>
+                            <li><a href="#">Esqueceu sua senha?</a></li>
+                        </ul>
+
+                        <button type="submit">Login</button>
                     </form>
                 </div>
             </div>
