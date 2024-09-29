@@ -98,6 +98,7 @@ main{
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     transition: 0.3s;
     cursor: pointer;
+    color: white;
     background: linear-gradient(188deg, #74B844, #519382, #458697, #3271b9);
 }
 
