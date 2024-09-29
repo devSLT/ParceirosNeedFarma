@@ -33,7 +33,7 @@ main {
 
 .contentAcount {
     width: 50%;
-    height: 90%;
+    height: 100%;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     background-color: white;
@@ -41,21 +41,22 @@ main {
 
 .headerAcount {
     width: 100%;
-    height: 13%;
+    height: 8%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: red;
 }
 
 .headerAcount img {
-    width: 50%;
+    width: 100%;
     height: 100%;
     color: #111;
 }
 
 .mainAcount {
     width: 100%;
-    height: 85%;
+    height: 92%;
     border-radius: 15px;
 }
 
@@ -70,7 +71,18 @@ main {
 
 .boxInputs input {
     width: 80%;
-    padding: 10px;
+    padding: 8px;
+    margin-bottom: 15px;
+    background-color: transparent;
+    border: none;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}
+
+
+.boxInputs select{
+    width: 84%;
+    padding: 8px;
     margin-bottom: 15px;
     background-color: transparent;
     border: none;
@@ -81,12 +93,12 @@ main {
 .boxInputs label {
     font-size: calc(0.4rem + 0.5vw);
     align-self: self-start;
-    margin-left: 80px;
+    margin-left: 70px;
 }
 
 .boxInputs button {
     width: 50%;
-    padding: 10px;
+    padding: 8px;
     background: linear-gradient(188deg, #74B844, #519382, #458697, #3271b9);
     border-radius: 15px;
     font-size: calc(0.5rem + 0.6vw);
