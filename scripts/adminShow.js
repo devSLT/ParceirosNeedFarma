@@ -103,36 +103,42 @@ async function populateTable() {
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl);
         });
-        let table = new DataTable('#usersTable', {
-            "language": {
-                "decimal": "",
-                "emptyTable": "Sem dados para mostrar nessa tabela.",
-                "info": "Mostrando _START_ a _END_ de _TOTAL_ linhas",
-                "infoEmpty": "Mostrando 0 a 0 de 0 linhas",
-                "infoFiltered": "(filtrado de _MAX_ linhas)",
-                "infoPostFix": "",
-                "thousands": ",",
-                "lengthMenu": "Mostrar _MENU_ linhas⠀⠀⠀⠀⠀⠀⠀⠀Exportar:",
-                "loadingRecords": "Carregando...",
-                "processing": "",
-                "search": "Filtrar:",
-                "zeroRecords": "Nenhum dado correspondente encontrado...",
-                "paginate": {
-                    "first": "Primeira",
-                    "last": "Última",
-                    "next": "Próxima",
-                    "previous": "Anterior"
+        if ( $.fn.dataTable.isDataTable( '#usersTable' ) ) {
+            table = $('#usersTable').DataTable();
+        }
+        else {
+            let table = new DataTable('#usersTable', {
+                "language": {
+                    "decimal": "",
+                    "emptyTable": "Sem dados para mostrar nessa tabela.",
+                    "info": "Mostrando _START_ a _END_ de _TOTAL_ linhas",
+                    "infoEmpty": "Mostrando 0 a 0 de 0 linhas",
+                    "infoFiltered": "(filtrado de _MAX_ linhas)",
+                    "infoPostFix": "",
+                    "thousands": ",",
+                    "lengthMenu": "Mostrar _MENU_ linhas⠀⠀⠀⠀⠀⠀⠀⠀Exportar:",
+                    "loadingRecords": "Carregando...",
+                    "processing": "",
+                    "search": "Filtrar:",
+                    "zeroRecords": "Nenhum dado correspondente encontrado...",
+                    "paginate": {
+                        "first": "Primeira",
+                        "last": "Última",
+                        "next": "Próxima",
+                        "previous": "Anterior"
+                    }
+                },
+                layout: {
+                    topStart: {
+                        pageLength: {
+                            menu: [10, 25, 50, 100]
+                        },
+                        buttons: ['csv', 'excel', 'pdf']
+                    }
                 }
-            },
-            layout: {
-                topStart: {
-                    pageLength: {
-                        menu: [10, 25, 50, 100]
-                    },
-                    buttons: ['csv', 'excel', 'pdf']
-                }
-            }
-        });
+            });
+        }
+        
     } catch (error) {
         console.error('Error fetching data:', error);
     }
@@ -228,3 +234,25 @@ async function handleUndeny(id) {
 
 // Call the function to populate the table on page load
 window.onload = populateTable;
+
+$(document).ready(function() {
+    function updateDayText() {
+        // Array com os dias da semana
+        const daysOfWeek = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
+        
+        // Obter a data atual
+        const today = new Date();
+        const dayOfWeek = daysOfWeek[today.getDay()];
+        const day = today.getDate();
+        const month = today.toLocaleString('pt-BR', { month: 'long' });
+
+        // Montar o texto formatado
+        const formattedText = `<i><i class="bi bi-brightness-high"></i> ${dayOfWeek}, ${day} de ${month}</i>`;
+
+        // Atualizar o texto do elemento com id "dayText"
+        $('#dayText').html(formattedText);
+    }
+
+    // Chamar a função para atualizar o texto
+    updateDayText();
+});
