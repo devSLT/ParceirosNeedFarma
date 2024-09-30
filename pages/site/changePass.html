@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../styles/login.css">
-    <title>Login</title>
+    <title>Alterar Senha</title>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
                     <img src="../../images/logo/Mediamodifier-Design.svg" alt="logo">
                 </div>
                 <div class="mainAcount">
-                    <form action="" class="boxInputs">
+                    <form action="PUT" class="boxInputs" id="changePassForm">
                         <label for="email">E-mail:</label>
                         <input type="email" name="email" id="email">
 
@@ -27,7 +27,7 @@
                         <input type="password" name="password" id="password">
 
                         <label for="password">Confirmar Senha:</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="confirmPassword" id="confirmPassword">
 
                         <button type="submit">Alterar senha</button>
                     </form>
@@ -35,6 +35,7 @@
             </div>
         </div>
     </main>
+    <script src="../../scripts/changePass.js"></script>
 </body>
 
 </html>

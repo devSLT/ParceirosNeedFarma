@@ -13,7 +13,7 @@ confirmCode.addEventListener('submit', function (event) {
         return;
     }
 
-    const URL = "http://localhost:8080/api/verify";
+    const URL = "http://localhost:8080/criar/verify";
 
     let data = {
         email,
