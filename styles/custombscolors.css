@@ -18,3 +18,6 @@
     border-color: var(--primary)!important;
     color: var(--primary)!important;
 }
+div.dt-container .dt-paging .dt-paging-button{
+    padding: 0!important;
+}

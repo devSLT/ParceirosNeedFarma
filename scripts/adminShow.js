@@ -103,7 +103,28 @@ async function populateTable() {
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl);
         });
-        let table = new DataTable('#usersTable');
+        let table = new DataTable('#usersTable', {
+            "language": {
+                "decimal": "",
+                "emptyTable": "Sem dados para mostrar nessa tabela.",
+                "info": "Mostrando _START_ a _END_ de _TOTAL_ linhas",
+                "infoEmpty": "Mostrando 0 a 0 de 0 linhas",
+                "infoFiltered": "(filtrado de _MAX_ linhas)",
+                "infoPostFix": "",
+                "thousands": ",",
+                "lengthMenu": "Mostrar _MENU_ linhas",
+                "loadingRecords": "Carregando...",
+                "processing": "",
+                "search": "Filtrar:",
+                "zeroRecords": "Nenhum dado correspondente encontrado...",
+                "paginate": {
+                    "first": "Primeira",
+                    "last": "Última",
+                    "next": "Próxima",
+                    "previous": "Anterior"
+                }
+            }
+        });
     } catch (error) {
         console.error('Error fetching data:', error);
     }
