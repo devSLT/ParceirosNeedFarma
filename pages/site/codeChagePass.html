@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/codeChangePass.css">
+    <title>Enviar Link Para Alteração de Senha</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <a href="./index.html"><img src="../../images/logo/logo-needfarma-svg.svg" alt="logo needFarma"></a>
+        </div>
+    </header>
+    <main>
+        <div class="boxVerCode">
+            <form action=""  id="sendLinkPass">
+                <label for="email">E-mail:</label>
+                <input type="text" name="email" id="email">
+
+                <button type="submit">Enviar Link</button>
+            </form>
+            <button id="resendButton" disabled>Reenviar Link <span id="countdown">60:00</span></button>
+        </div>
+    </main>
+
+    <script src="../../scripts/codeChangePass.js"></script>
+    <script src="../../scripts/codeChangePassTimer.js"></script>
+</body>
+
+</html>
