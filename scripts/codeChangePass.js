@@ -7,7 +7,7 @@ document.getElementById('sendLinkPass').addEventListener('submit', (event) => {
         email,
     }
 
-    const URL = 'http://localhost:8080/criar/forgotPass';
+    const URL = 'http://localhost:8080/user/forgotPass';
 
     fetch(URL, {
         method: 'POST',

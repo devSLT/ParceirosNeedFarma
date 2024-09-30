@@ -21,7 +21,7 @@ botaoSub.addEventListener('submit', function (event) {
         return;
     }
 
-    const URL = "http://localhost:8080/criar/signup";
+    const URL = "http://localhost:8080/user/register";
 
     let data = {
         businessName,

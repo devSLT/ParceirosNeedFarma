@@ -1,4 +1,4 @@
-document.getElementById('formLogin').addEventListener('submit', (event)=>{
+document.getElementById('formLogin').addEventListener('submit', (event) => {
     event.preventDefault();
 
     const email = document.getElementById('email').value;
@@ -9,7 +9,7 @@ document.getElementById('formLogin').addEventListener('submit', (event)=>{
         password,
     }
 
-    const URL = 'http://localhost:8080/entrar/login';
+    const URL = 'http://localhost:8080/user/login';
 
     fetch(URL, {
         method: 'POST',
@@ -18,17 +18,44 @@ document.getElementById('formLogin').addEventListener('submit', (event)=>{
         },
         body: JSON.stringify(data)
     })
-        .then((res) => res.json())
+        .then((res) => {
+
+            if (!res.ok) {
+                throw new Error('Erro na autenticação');
+            }
+
+            return res;
+        }
+        )
+        .then((res) => {
+
+            const token = res.headers.get('authorization-token'); // Ou 'authorization', dependendo do que seu servidor retorna
+
+            if (token) {
+                localStorage.setItem('token', token); // Armazena o token no localStorage
+            }
+
+            return res.json(); // Continuar para o próximo then
+
+        })
         .then((data) => {
             console.log(data)
 
             alert(data.msg)
 
-            //Link pagina verificar codigo
-            if (data.sucess) {
-                return window.location.href = 'http://127.0.0.1:5500/index.html';
+            const token = localStorage.getItem('token');
+
+            if (token) {
+                console.log('Token:', token);
+            } else {
+                console.log('Nenhum token encontrado.');
             }
 
+            //Link pagina verificar codigo
+            /* if (data.sucess) {
+                 return window.location.href = 'http://127.0.0.1:5500/ParceirosNeedFarma/';
+             }
+ */
         })
         .catch(error => {
             console.error('Erro:', error);

@@ -19,7 +19,7 @@ document.getElementById('changePassForm').addEventListener('submit', (event) => 
 
     console.log(data)
 
-    const URL = 'http://localhost:8080/criar/changePass';
+    const URL = 'http://localhost:8080/user/changePass';
 
     fetch(URL, {
         method: 'PUT',

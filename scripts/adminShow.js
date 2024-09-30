@@ -103,7 +103,7 @@ async function populateTable() {
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl);
         });
-
+        let table = new DataTable('#usersTable');
     } catch (error) {
         console.error('Error fetching data:', error);
     }
@@ -199,5 +199,3 @@ async function handleUndeny(id) {
 
 // Call the function to populate the table on page load
 window.onload = populateTable;
-
-let table = new DataTable('#myTable');
