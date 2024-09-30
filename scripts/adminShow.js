@@ -112,7 +112,7 @@ async function populateTable() {
                 "infoFiltered": "(filtrado de _MAX_ linhas)",
                 "infoPostFix": "",
                 "thousands": ",",
-                "lengthMenu": "Mostrar _MENU_ linhas",
+                "lengthMenu": "Mostrar _MENU_ linhas⠀⠀⠀⠀⠀⠀⠀⠀Exportar:",
                 "loadingRecords": "Carregando...",
                 "processing": "",
                 "search": "Filtrar:",
@@ -122,6 +122,14 @@ async function populateTable() {
                     "last": "Última",
                     "next": "Próxima",
                     "previous": "Anterior"
+                }
+            },
+            layout: {
+                topStart: {
+                    pageLength: {
+                        menu: [10, 25, 50, 100]
+                    },
+                    buttons: ['csv', 'excel', 'pdf']
                 }
             }
         });
