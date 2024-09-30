@@ -199,3 +199,5 @@ async function handleUndeny(id) {
 
 // Call the function to populate the table on page load
 window.onload = populateTable;
+
+let table = new DataTable('#myTable');
