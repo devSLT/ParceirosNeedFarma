@@ -4,7 +4,7 @@ var userJson;
 function checkHome(token) {
     return new Promise((resolve) => { // Retorna uma Promise
         if (token) {
-            fetch("http://localhost:8080/user/check", {
+            fetch("https://api-parceiros.onrender.com/user/check", {
                 method: 'POST',
                 headers: {
                     'Authorization': `Bearer ${token}`,
@@ -36,13 +36,13 @@ function checkHome(token) {
                             break;
                         default:
                             localStorage.removeItem('token');
-                            window.location.href = "http://127.0.0.1:5501/pages/site/login.html";
+                            window.location.href = "https://parceiros-need-farma.vercel.app/pages/site/login.html";
                             break;
                     }
                 })
                 .catch(err => {
                     console.log(err);
-                    window.location.href = "http://127.0.0.1:5501/pages/site/login.html";
+                    window.location.href = "https://parceiros-need-farma.vercel.app/pages/site/login.html";
                 });
         } else {
             console.log('Token inválido');
@@ -54,7 +54,7 @@ function checkHome(token) {
 function checkMain(token) {
     return new Promise((resolve, reject) => { // Retorna uma Promise
         if (token) {
-            fetch("http://localhost:8080/user/check", {
+            fetch("https://api-parceiros.onrender.com/user/check", {
                 method: 'POST',
                 headers: {
                     'Authorization': `Bearer ${token}`,
@@ -86,7 +86,7 @@ function checkMain(token) {
                             break;
                         default:
                             localStorage.removeItem('token');
-                            window.location.href = "http://127.0.0.1:5501/pages/site/login.html";
+                            window.location.href = "https://parceiros-need-farma.vercel.app/pages/site/login.html";
                             break;
                     }
                 })
