@@ -117,11 +117,13 @@ window.onload = function () {
 
             switch (adm) {
                 case true:
-                    cHeader.innerHTML = `<li><a class="dropdown-item" href="https://parceiros-need-farma.vercel.app/pages/adm/adminhome.html">Painel de Controle</a></li>`;
+                    //https://parceiros-need-farma.vercel.app/pages/adm/adminhome.html
+                    cHeader.innerHTML = `<li><a class="dropdown-item" href="./pages/adm/adminhome.html">Painel de Controle</a></li>`;
                     //
                     break;
                 case false:
-                    cHeader.innerHTML = `<li><a class="dropdown-item" href="https://parceiros-need-farma.vercel.app/pages/paineldecontrole/paineldecontrole.html">Painel de Controle</a></li>`;
+                    https://parceiros-need-farma.vercel.app/pages/paineldecontrole/paineldecontrole.html
+                    cHeader.innerHTML = `<li><a class="dropdown-item" href="./pages/paineldecontrole/paineldecontrole.html">Painel de Controle</a></li>`;
                     //http://127.0.0.1:5501/pages/paineldecontrole/paineldecontrole.html
                     break;
                 default:

@@ -1,18 +1,18 @@
-import checkMain from './home.js'
-const signoutbtn = document.getElementById('signout')
+/*import checkMain from './home.js'
 
 // Executa ao carregar a página
 window.onload = function () {
 
+    const signout = document.getElementById('signout')
+
     const token = localStorage.getItem('token');
     checkMain(token)
 
-};
+    signout.addEventListener('click', () => {
+        localStorage.removeItem('token');
+        alert('Deslogado com sucesso');
+        window.location.href = '../../index.html'
+    })
 
-function signout(){
-    localStorage.removeItem('token')
-    window.location.href = "https://parceiros-need-farma.vercel.app/index.html";
-    alert('Desconectado com sucesso!')
-}
 
-signoutbtn.addEventListener('click', signout)
+}*/

@@ -1,3 +1,4 @@
+import checkMain from './home.js'
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
@@ -147,7 +148,7 @@ async function populateTable() {
 // Handle Accept button click for "Em Análise"
 async function handleAccept(id) {
     try {
-        const response = await fetch('http://localhost:8080/table/adminAccept', {
+        const response = await fetch('https://api-parceiros.onrender.com/table/adminAccept', {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
@@ -169,7 +170,7 @@ async function handleAccept(id) {
 // Handle Deny button click for "Em Análise"
 async function handleDeny(id) {
     try {
-        const response = await fetch('http://localhost:8080/table/adminDeny', {
+        const response = await fetch('https://api-parceiros.onrender.com/table/adminDeny', {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
@@ -191,7 +192,7 @@ async function handleDeny(id) {
 // Handle Unaccept button click for "Ativado"
 async function handleUnaccept(id) {
     try {
-        const response = await fetch('http://localhost:8080/table/adminUnaccept', {
+        const response = await fetch('https://api-parceiros.onrender.com/table/adminUnaccept', {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
@@ -233,7 +234,7 @@ async function handleUndeny(id) {
 }
 
 // Call the function to populate the table on page load
-window.onload = populateTable;
+//window.onload = populateTable;
 
 $(document).ready(function() {
     function updateDayText() {
@@ -256,3 +257,22 @@ $(document).ready(function() {
     // Chamar a função para atualizar o texto
     updateDayText();
 });
+
+
+// Executa ao carregar a página
+window.onload = function () {
+
+    const signout = document.getElementById('signout')
+
+    const token = localStorage.getItem('token');
+    checkMain(token)
+    populateTable
+
+    signout.addEventListener('click', () => {
+        localStorage.removeItem('token');
+        alert('Deslogado com sucesso');
+        window.location.href = '../../index.html'
+    })
+
+
+};

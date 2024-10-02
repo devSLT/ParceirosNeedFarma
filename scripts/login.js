@@ -22,12 +22,10 @@ function login() {
         .then(response => response.json())
         .then(data => {
 
-            console.log('Resposta do servidor: ', data)
-
             if (data.sucess == true) {
 
                 localStorage.setItem('token', data.token);
-                window.location.href = "https://parceiros-need-farma.vercel.app/index.html";
+                window.location.href = "../../index.html"; //https://parceiros-need-farma.vercel.app/index.html
 
             } else {
                 alert(data.msg)
