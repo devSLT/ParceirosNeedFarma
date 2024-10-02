@@ -7,7 +7,7 @@ document.getElementById('sendLinkPass').addEventListener('submit', (event) => {
         email,
     }
 
-    const URL = 'http://localhost:8080/user/forgotPass';
+    const URL = 'https://api-parceiros.onrender.com/user/forgotPass';
 
     fetch(URL, {
         method: 'POST',
@@ -24,7 +24,7 @@ document.getElementById('sendLinkPass').addEventListener('submit', (event) => {
 
             //Link pagina mudar senha
             if (data.msg === 'Link para criação da nova senha enviado') {
-                return window.location.href = 'http://127.0.0.1:5500/pages/site/changePass.html';
+                return window.location.href = 'https://parceiros-need-farma.vercel.app/pages/site/changePass.html';
             }
 
         })

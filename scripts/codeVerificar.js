@@ -13,7 +13,7 @@ confirmCode.addEventListener('submit', function (event) {
         return;
     }
 
-    const URL = "http://localhost:8080/user/verify";
+    const URL = "https://api-parceiros.onrender.com/user/verify";
 
     let data = {
         email,
@@ -34,7 +34,7 @@ confirmCode.addEventListener('submit', function (event) {
             alert(data.msg)
             if(data.msg === 'Sua conta foi enviada para análise, enviaremos um email assim que ela for aceita.'){
                 //Envia para a tela de login
-                return window.location.href = 'http://127.0.0.1:5500/pages/site/login.html';
+                return window.location.href = 'https://parceiros-need-farma.vercel.app/pages/site/login.html';
             }
 
         })

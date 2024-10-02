@@ -19,7 +19,7 @@ document.getElementById('changePassForm').addEventListener('submit', (event) => 
 
     console.log(data)
 
-    const URL = 'http://localhost:8080/user/changePass';
+    const URL = 'https://api-parceiros.onrender.com/user/changePass';
 
     fetch(URL, {
         method: 'PUT',
@@ -36,7 +36,7 @@ document.getElementById('changePassForm').addEventListener('submit', (event) => 
 
             //Link pagina mudar senha
             if (data.sucess) {
-                return window.location.href = 'http://127.0.0.1:5500/pages/site/login.html';
+                return window.location.href = 'https://parceiros-need-farma.vercel.app/pages/site/login.html';
             }
 
 

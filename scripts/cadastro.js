@@ -21,7 +21,7 @@ botaoSub.addEventListener('submit', function (event) {
         return;
     }
 
-    const URL = "http://localhost:8080/user/register";
+    const URL = "https://api-parceiros.onrender.com/user/register";
 
     let data = {
         businessName,
@@ -50,7 +50,7 @@ botaoSub.addEventListener('submit', function (event) {
 
             //Link pagina verificar codigo
             if (data.msg === 'Código de verificação enviado.') {
-                return window.location.href = 'http://127.0.0.1:5500/pages/site/codeVerificar.html';
+                return window.location.href = 'https://parceiros-need-farma.vercel.app/pages/site/codeVerificar.html';
             }
 
         })

@@ -213,7 +213,7 @@ async function handleUnaccept(id) {
 // Handle Undeny button click for "Desativado"
 async function handleUndeny(id) {
     try {
-        const response = await fetch('http://localhost:8080/table/adminUndeny', {
+        const response = await fetch('https://api-parceiros.onrender.com/table/adminUndeny', {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
