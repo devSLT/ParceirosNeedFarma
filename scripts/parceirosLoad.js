@@ -1,10 +1,9 @@
-import checkMain from './home.js';
+import checkMain from './home.js'
 
 // Executa ao carregar a página
-function loadpage() {
+window.onload = function () {
+
     const token = localStorage.getItem('token');
+    checkMain(token)
 
-    checkMain(token);
 };
-
-document.addEventListener('DOMContentLoaded', loadpage())
