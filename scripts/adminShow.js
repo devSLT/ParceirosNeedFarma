@@ -5,7 +5,7 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 // Fetch data and populate the table
 async function populateTable() {
     try {
-        const response = await fetch('http://https://api-parceiros.onrender.com/table/');
+        const response = await fetch('https://api-parceiros.onrender.com/table/');
         const data = await response.json();
 
         const tableBody = document.getElementById('tableBody');
@@ -158,7 +158,7 @@ async function handleAccept(id) {
 
         if (response.ok) {
             alert(`User with ID ${id} has been accepted.`);
-            populateTable(); // Refresh the table after the action
+            location.reload();
         } else {
             alert('Error accepting the user.');
         }
@@ -180,7 +180,7 @@ async function handleDeny(id) {
 
         if (response.ok) {
             alert(`User with ID ${id} has been denied.`);
-            populateTable(); // Refresh the table after the action
+            location.reload();
         } else {
             alert('Error denying the user.');
         }
@@ -202,7 +202,7 @@ async function handleUnaccept(id) {
 
         if (response.ok) {
             alert(`User with ID ${id} has been unaccepted.`);
-            populateTable(); // Refresh the table after the action
+            location.reload();
         } else {
             alert('Error unaccepting the user.');
         }
@@ -224,7 +224,7 @@ async function handleUndeny(id) {
 
         if (response.ok) {
             alert(`User with ID ${id} has been undenied.`);
-            populateTable(); // Refresh the table after the action
+            location.reload();
         } else {
             alert('Error undenying the user.');
         }
@@ -266,7 +266,7 @@ window.onload = function () {
 
     const token = localStorage.getItem('token');
     checkMain(token)
-    populateTable
+    populateTable();
 
     signout.addEventListener('click', () => {
         localStorage.removeItem('token');
