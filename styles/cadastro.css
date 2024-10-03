@@ -77,7 +77,13 @@ main {
     border: 1px solid #ddd;
     border-radius: 15px;
 }
-
+.field-icon {
+    float: right;
+    margin-left: 70%;
+    margin-top: -47px;
+    position: relative;
+    z-index: 2;
+}
 
 .boxInputs select{
     width: 84%;
