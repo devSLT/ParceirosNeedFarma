@@ -5,7 +5,7 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 // Fetch data and populate the table
 async function populateTable() {
     try {
-        const response = await fetch('http://localhost:8080/table/');
+        const response = await fetch('http://https://api-parceiros.onrender.com/table/');
         const data = await response.json();
 
         const tableBody = document.getElementById('tableBody');
