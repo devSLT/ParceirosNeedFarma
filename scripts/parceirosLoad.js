@@ -11,7 +11,7 @@ window.onload = function () {
     signout.addEventListener('click', () => {
         localStorage.removeItem('token');
         alert('Deslogado com sucesso');
-        window.location.href = '../../index.html'
+        window.location.href = 'https://parceiros-need-farma.vercel.app/index.html'
     })
 
 };
