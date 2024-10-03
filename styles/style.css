@@ -9,7 +9,7 @@
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 body {
     overflow-x: hidden;
@@ -41,7 +41,7 @@ header .header .cadastro {
     border-radius: 1rem;
     color: white;
     font-size: calc(0.45rem + 0.5vw);
-    padding:8px;
+    padding: 8px;
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -49,7 +49,7 @@ header .header .cadastro {
     transition: ease-in 0.2s;
 }
 
-header .header .cadastro:hover{
+header .header .cadastro:hover {
     background-color: #2B71B6;
     border: 2px solid #00000050;
     scale: 1.05;
@@ -82,7 +82,7 @@ header .subHeader ul li:hover {
     color: #2B71B6;
 }
 
-header .subHeader ul li a{
+header .subHeader ul li a {
     text-decoration: none;
     color: #111;
 }
@@ -408,12 +408,11 @@ swiper-slide img {
 
 .duvidas {
     width: 100%;
-    min-height: 65vh;
     max-height: max-content;
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 10vh;
+    margin-top: 10vh;
 }
 
 .title-duvidas {
@@ -485,7 +484,6 @@ swiper-slide img {
     align-items: center;
     flex-direction: column;
     border-radius: 15px;
-    margin-bottom: 10vh;
 }
 
 .ad h2 {
@@ -641,8 +639,254 @@ footer {
 
     /*Config footer */
 
-    .opts-footer ul li img{
+    .opts-footer ul li img {
         width: 18px;
         height: 18px;
+    }
+}
+
+@media screen and (max-width:860px) {
+
+    header .subHeader ul {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Configuracoes banner Swiper*/
+    swiper-container {
+        width: 95%;
+        height: 80%;
+    }
+
+    /* Fim configuracao Banner */
+
+    /* About us */
+
+    .about {
+        width: 100%;
+        height: max-content;
+        ;
+    }
+
+    .aboutBox {
+        width: 90%;
+        height: 85%;
+        flex-direction: column;
+    }
+
+    .aboutBox .box {
+        width: 100%;
+        height: 75%;
+        margin: 15px;
+    }
+
+    .titleAbout h1 {
+        font-size: calc(1.2rem + 1vw);
+    }
+
+    .box .titleBox-about h2 {
+        font-size: calc(0.6rem + 0.6vw);
+    }
+
+    .box .contentBox-about p {
+        font-size: calc(0.5rem + 0.5vw);
+    }
+
+    /* Configuracao beneficios */
+
+    .beneficios {
+        width: 100%;
+        height: max-content;
+    }
+
+    .beneficios .title-beneficios h1 {
+        font-size: calc(1.2rem + 1vw);
+    }
+
+    .beneficios .boxCard-beneficios {
+        width: 90%;
+        height: 90%;
+        flex-direction: column;
+    }
+
+    .beneficios .boxCard-beneficios .card-beneficios {
+        width: 100%;
+        height: 50vh;
+        margin: 20px;
+        flex-direction: column;
+    }
+
+    .titleCard-beneficios h2 {
+        font-size: calc(0.7rem + 0.6vw);
+    }
+
+    .img-beneficios {
+        height: 45;
+    }
+
+    .text-beneficios p {
+        font-size: calc(0.7rem + 0.6vw);
+    }
+
+    /* Configuracao Planos */
+
+    .planos {
+        width: 100%;
+        height: max-content;
+    }
+
+    .title-planos {
+        width: 80%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title-planos h2 {
+        font-size: calc(1.2rem + 1vw);
+        font-weight: 500;
+        color: white;
+    }
+
+    .boxCard-planos {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .card-planos {
+        width: 85%;
+        height: 35vh;
+        margin: 20px;
+    }
+
+    .card-planos .Hcard-planos h3 {
+        font-size: calc(0.8rem + 0.7vw);
+    }
+
+    .card-planos .Hcard-planos h4 {
+        color: rgb(0, 0, 0);
+        font-size: calc(0.6rem + 0.6vw);
+        font-weight: 400;
+    }
+
+    .card-planos .contentCard-planos ul li {
+        font-size: calc(0.6rem + 0.6vw);
+    }
+
+    /* Config AD */
+
+    .ad {
+        width: 100%;
+        height: 30vh;
+        border-radius: 0;
+    }
+
+    .ad h2 {
+        font-size: calc(1rem + 1vw);
+    }
+
+    .ad h3 {
+        font-size: calc(0.5rem + 0.6vw);
+    }
+
+    .ad a {
+        width: calc(50% + 30px);
+        background-color: rgb(255, 255, 255);
+        padding: 1.8vh;
+        font-size: calc(0.6rem + 0.6vw);
+    }
+
+    /* Configuracoes duvidas */
+
+    .duvidas {
+        margin-bottom: 10vh;
+    }
+
+    .title-duvidas {
+        width: 100%;
+        height: 10%;
+    }
+
+    .title-duvidas h2 {
+        font-size: calc(1.2rem + 1vw);
+    }
+
+    .boxDuvidas {
+        width: 85%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textDrop {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.6s ease, opacity 0.6s ease;
+    }
+
+    .textDrop p {
+        font-size: calc(0.5rem + 0.6vw);
+        text-align: justify;
+    }
+
+    /* Config Footer */
+
+    footer {
+        width: 100%;
+        height: max-content;
+    }
+
+    .opts-footer {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .opts-footer ul {
+        width: 100%;
+        height: 100%;
+        list-style-type: none;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        padding-top: 40px;
+        flex-direction: column;
+
+    }
+
+    .opts-footer ul li {
+        font-size: calc(0.7rem + 0.6vw);
+    }
+
+    .opts-footer ul li a {
+        text-decoration: none;
+        padding-left: 5px;
+        color: #111;
+    }
+
+    .opts-footer ul li h3 {
+        font-size: calc(0.8rem + 0.7vw);
+    }
+
+    .copyright-footer {
+        width: 100%;
+        height: 8vh;
+    }
+
+    .copyright-footer h4 {
+        font-size: calc(0.7rem + 0.5vw);
+        font-weight: 400;
     }
 }
