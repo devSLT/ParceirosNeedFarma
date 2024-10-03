@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../styles/login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     </script>
     <title>Login</title>
 </head>
@@ -23,10 +24,11 @@
                     <div class="boxInputs" id="formLogin">
                         <label for="email">E-mail:</label>
                         <input type="email" name="email" id="email">
-
-                        <label for="password">Senha:</label>
-                        <input type="password" name="password" id="password">
-
+                        <div style="width: 85%;">
+                            <label for="password">Senha:</label>
+                            <input type="password" name="password" id="password" class="senha">
+                            <span toggle="#password" class="bi bi-eye-fill field-icon toggle-password" style="margin-left: 5%; font-size: 1.2rem"></span>
+                        </div>
                         <ul>
                             <li>
                                 <input type="checkbox" name="remember" id="remember">
@@ -41,6 +43,7 @@
             </div>
         </div>
     </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="../../scripts/login.js"></script>
 </body>
 

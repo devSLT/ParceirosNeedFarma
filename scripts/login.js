@@ -49,6 +49,17 @@ function login() {
 
 }
 
+$(".toggle-password").click(function() {
+
+    $(this).toggleClass("bi-eye-fill bi-eye-slash");
+    var input = $($(this).attr("toggle"));
+    if (input.attr("type") == "password") {
+        input.attr("type", "text");
+    } else {
+        input.attr("type", "password");
+    }
+});
+
 window.onload = function () {
     const savedEmail = localStorage.getItem('email');
     if (savedEmail) {
