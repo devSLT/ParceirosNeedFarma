@@ -136,3 +136,49 @@ main{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
+@media screen and (max-width:1280px){
+
+    main {
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .boxImage {
+        display: none;
+    }
+    
+    .boxAcount {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:840px) {
+    .contentAcount{
+        width: 90%;
+        height: 60%;
+        border-radius: 15px;
+    }
+
+    .boxInputs input{
+        padding: 10px;
+    }
+
+    .boxInputs label{
+        font-size: calc(0.7rem + 0.6vw);
+        margin-left: 50px;
+    }
+    
+    .boxInputs button{
+        width: 50%;
+        font-size: calc(0.7rem + 0.7vw);
+    }
+    .boxInputs ul li span{
+        font-size: calc(0.6rem + 0.6vw);
+    }
+    
+    .boxInputs ul li a{
+        font-size: calc(0.6rem + 0.6vw);
+    }
+    
+}

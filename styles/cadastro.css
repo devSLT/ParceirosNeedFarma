@@ -114,6 +114,49 @@ main {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
+@media screen and (max-width:1280px){
+
+    main {
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .boxImage {
+        display: none;
+    }
+    
+    .boxAcount {
+        width: 100%;
+        height: max-content;
+    }
+    
+    .headerAcount {
+        height: 15vh;
+    }
+    
+    .mainAcount {
+        height: 85vh;
+    }
+    
+}
+
+@media screen and (max-width:840px) {
+    .contentAcount{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .boxInputs input{
+        padding: 5px;
+    }
+
+    .boxInputs select{
+        padding: 5px;
+    }
+}
+
+
+
 @media screen and (max-height:840px) {
     
     .contentAcount{
