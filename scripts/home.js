@@ -36,13 +36,13 @@ function checkHome(token) {
                             break;
                         default:
                             localStorage.removeItem('token');
-                            window.location.href = "https://parceiros-need-farma.vercel.app/pages/site/login.html";
+                            window.location.href = "./pages/site/login.html";
                             break;
                     }
                 })
                 .catch(err => {
                     console.log(err);
-                    window.location.href = "https://parceiros-need-farma.vercel.app/pages/site/login.html";
+                    window.location.href = "./pages/site/login.html";
                 });
         } else {
             console.log('Token inválido');
@@ -86,7 +86,7 @@ function checkMain(token) {
                             break;
                         default:
                             localStorage.removeItem('token');
-                            window.location.href = "https://parceiros-need-farma.vercel.app/pages/site/login.html";
+                            window.location.href = "./pages/site/login.html";
                             break;
                     }
                 })
@@ -118,16 +118,16 @@ window.onload = function () {
             switch (adm) {
                 case true:
                     //https://parceiros-need-farma.vercel.app/pages/adm/adminhome.html
-                    cHeader.innerHTML = `<li><a class="dropdown-item" href="https://parceiros-need-farma.vercel.app/pages/adm/adminhome.html">Painel de Controle</a></li>`;
+                    cHeader.innerHTML = `<li><a class="dropdown-item" href="./pages/adm/adminhome.html">Painel de Controle</a></li>`;
                     //
                     break;
                 case false:
                     //https://parceiros-need-farma.vercel.app/pages/paineldecontrole/paineldecontrole.html
-                    cHeader.innerHTML = `<li><a class="dropdown-item" href="https://parceiros-need-farma.vercel.app/pages/paineldecontrole/paineldecontrole.html">Painel de Controle</a></li>`;
+                    cHeader.innerHTML = `<li><a class="dropdown-item" href="http://127.0.0.1:5501/pages/paineldecontrole/paineldecontrole.html">Painel de Controle</a></li>`;
                     //http://127.0.0.1:5501/pages/paineldecontrole/paineldecontrole.html
                     break;
                 default:
-                    cHeader.innerHTML = `<li><a class="dropdown-item" href="https://parceiros-need-farma.vercel.app/pages/paineldecontrole/paineldecontrole.html">Painel de Controle</a></li>`;
+                    cHeader.innerHTML = `<li><a class="dropdown-item" href="./pages/paineldecontrole/paineldecontrole.html">Painel de Controle</a></li>`;
                     break;
             }
         })
