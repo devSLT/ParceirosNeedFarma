@@ -7,93 +7,15 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     overflow-x: hidden;
     width: 100vw;
-    height: max-content;
-}
-
-header {
-    display: flex;
-    flex-direction: column;
-    height: 15vh;
-    width: 100%;
-}
-
-header .header {
-    width: 100%;
-    height: 60%;
-    background: linear-gradient(188deg, #74B844, #519382, #458697, #3271b9);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 3vw 0 3vw;
-}
-
-header .header .cadastro {
-    width: max-content;
-    border: 2px solid #ffffff;
-    background-color: transparent;
-    border-radius: 1rem;
-    color: white;
-    font-size: calc(0.45rem + 0.5vw);
-    padding: 8px;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: ease-in 0.2s;
-}
-
-header .header .cadastro:hover {
-    background-color: #2B71B6;
-    border: 2px solid #00000050;
-    scale: 1.05;
-}
-
-header .subHeader {
-    width: 100%;
-    height: 40%;
-    background-color: #F2F3F5;
-}
-
-header .subHeader ul {
-    margin: auto;
-    width: 60%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style-type: none;
-}
-
-header .subHeader ul li {
-    font-size: calc(0.6rem + 0.5vw);
-    font-weight: 500;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-header .subHeader ul li:hover {
-    color: #2B71B6;
-}
-
-header .subHeader ul li a {
-    text-decoration: none;
-    color: #111;
 }
 
 /* Main */
 
 main {
-    width: 100vw;
-    height: 85vh;
-    display: flex;
-    flex-direction: column;
+    background: linear-gradient(188deg, #74B844, #519382, #458697, #3271b9);
     justify-content: center;
     align-items: center;
 }

@@ -11,19 +11,17 @@
 </head>
 
 <body>
-    <header>
-        <div class="header">
+    <main class="d-flex flex-column w-100 h-100 align-content-center">
+        <div style="max-width: fit-content; height: 10%;">
             <a href="https://parceiros-need-farma.vercel.app/"><img src="../../images/logo/logo-needfarma-svg.svg" alt="logo needFarma"></a>
         </div>
-    </header>
-    <main>
+        <h3 class="my-5 text-white">
+            Insira o código que você recebeu no e-mail vinculado à sua conta:
+        </h3>
         <div class="boxVerCode">
-            <form action=""  id="confirmCode">
-                <label for="email">E-mail:</label>
-                <input type="text" name="email" id="email">
-
-                <label for="verificationCode">Insira o código enviado por e-mail:</label>
-                <input type="text" name="verificationCode" id="verificationCode">
+            <form action="" id="confirmCode">
+                <input type="text" name="email" id="email" placeholder="E-mail">
+                <input type="text" name="verificationCode" id="verificationCode" placeholder="Insira o código enviado por e-mail">
 
                 <button type="submit">Confirmar Código</button>
             </form>
