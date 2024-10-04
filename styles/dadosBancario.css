@@ -1,0 +1,91 @@
+.boxMain {
+    width: 100%;
+    height: 85%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1%;
+    width: 100%;
+}
+
+.boxInfomacoes {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.titleInfoP {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleInfoP h2 {
+    font-size: calc(0.8rem + 0.8vw);
+}
+
+.inputsInfo {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inputsInfo input {
+    width: 65%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid;
+    outline: none;
+}
+
+.inputsInfo select{
+    width: 65%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid;
+    outline: none;
+}
+
+.inputsInfo button{
+    width: 40%;
+    padding: 15px;    
+    border-radius: 15px;
+    font-size: calc(0.4rem + 0.6vw);
+    font-weight: 400;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.3s;
+    border: none;
+    background-color: #2B6FAC;
+    color: white;
+}
+
+.inputsInfo button:hover{
+    scale: 1.03;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Ajuste dados bancarios */
+.boxInfoP{
+    width: 50%;
+    height: 100%;
+}
+
+.titleInfoP{
+    height: 10%;
+}
+
+.titleInfoP h2{
+    font-size: calc(1rem + 1vw);
+}
