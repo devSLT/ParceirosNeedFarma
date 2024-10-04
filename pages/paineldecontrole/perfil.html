@@ -95,8 +95,8 @@
 
                                 <input type="text" name="fullName" maxlength="50" placeholder="Nome completo" required>
                                 <input type="email" name="email" id="email" placeholder="E-mail">
-                                <input type="tel" name="phone" id="phone" placeholder="Telefone Comercial">
-                                <input type="tel" name="personalPhone" id="personalPhone" placeholder="WhatsApp">
+                                <input class="sp_celphones" type="text" name="phone" id="phone" placeholder="Telefone Comercial">
+                                <input class="sp_celphones" type="text" name="personalPhone" id="personalPhone" placeholder="WhatsApp">
                                 <input type="password" name="password" id="password" class="senha" placeholder="Senha">
                             </div>
                         </div>
@@ -107,9 +107,9 @@
 
                             <div class="inputDocument">
                                 <input type="text" name="cnpj" id="cnpj" placeholder="CNPJ">
-                                <input type="number" name="cep" id="cep" placeholder="CEP">
+                                <input type="text" name="cep" id="cep" placeholder="CEP">
                                 <input type="text" name="address" id="address" placeholder="Endereço Completo">
-                                <input type="number" name="rgCnh" maxlength="14" placeholder="RG / CNH"
+                                <input type="text" name="rgCnh" placeholder="RG / CNH"
                                     pattern="[0-9a-zA-Z.\-]{7,14}" required>
                             </div>
                         </div>
@@ -191,7 +191,9 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
     <script type="module" src="../../scripts/dataShow.js"></script>
+    <script src="../../scripts/dddPhone.js"></script>
 </body>
 
 </html>
