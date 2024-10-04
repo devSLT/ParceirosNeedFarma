@@ -10,6 +10,7 @@
 body {
     overflow-x: hidden;
     width: 100vw;
+    height: 100vh;
 }
 
 /* Main */
@@ -18,6 +19,8 @@ main {
     background: linear-gradient(188deg, #74B844, #519382, #458697, #3271b9);
     justify-content: center;
     align-items: center;
+    width: 100vw;
+    height: 100vh;
 }
 
 .boxVerCode {
@@ -88,28 +91,4 @@ main {
 .boxVerCode button:hover{
     scale: 1.03;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-@media screen and (max-width:1280px){
-    .boxVerCode{
-        width: 70%;
-        height: 60%;
-    }
-
-    .boxVerCode form {
-        width: 100%;
-        height: 60%;
-    }
-}
-
-
-@media screen and (max-width:800px){
-    .boxVerCode{
-        width: 90%;
-        height: 60%;
-    }
-
-    .boxVerCode form {
-        height: 50%;
-    }
 }
