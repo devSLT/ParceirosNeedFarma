@@ -7,11 +7,11 @@ botaoSub.addEventListener('submit', function (event) {
 
     const businessName = document.getElementById('businessName').value;
     const email = document.getElementById('email').value;
-    const phone = document.getElementById('phone').value;
-    const personalPhone = document.getElementById('personalPhone').value;
-    const cnpj = document.getElementById('cnpj').value;
+    const phone = document.getElementById("phone").value.replace(/\D/g,'').slice(2);
+    const personalPhone = document.getElementById("personalPhone").value.replace(/\D/g,'').slice(2);
+    const cnpj = document.getElementById('cnpj').value.replace(/\D/g,'');
     const businessType = document.getElementById('businessType').value;
-    const cep = document.getElementById('cep').value;
+    const cep = document.getElementById('cep').value.replace(/\D/g,'');
     const address = document.getElementById('address').value;
     const password = document.getElementById('password').value;
 
@@ -70,4 +70,16 @@ $(".toggle-password").click(function() {
     } else {
         input.attr("type", "password");
     }
+});
+$(document).ready(function() {
+    var SPMaskBehavior = function(val) {
+            return val.replace(/\D/g, '').length === 13 ? '+55 (00) 00000-0000' : '+55 (00) 0000-00009';
+        },
+        spOptions = {
+            onKeyPress: function(val, e, field, options) {
+                field.mask(SPMaskBehavior.apply({}, arguments), options);
+            }
+        };
+
+    $('.sp_celphones').mask(SPMaskBehavior, spOptions);
 });

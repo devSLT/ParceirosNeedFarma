@@ -30,13 +30,13 @@
                         <input type="email" name="email" id="email">
 
                         <label for="phone">Telefone Comercial:</label>
-                        <input type="tel" name="phone" id="phone">
+                        <input class="sp_celphones" type="text" name="telefone" id="phone">
 
                         <label for="businessPhone">WhatsApp:</label>
-                        <input type="tel" name="personalPhone" id="personalPhone">
+                        <input class="sp_celphones" type="text" name="telefone" id="personalPhone">
 
                         <label for="cnpj">CNPJ:</label>
-                        <input type="number" name="cnpj" id="cnpj" placeholder="(Somente números)">
+                        <input name="cnpj" id="cnpj">
 
                         <label for="businessType">Selecione a categoria do negócio:</label>
                         <select id="businessType" name="businessType">
@@ -50,7 +50,7 @@
                         </select>
 
                         <label for="cep">CEP:</label>
-                        <input type="number" name="cep" id="cep" placeholder="(Somente números)">
+                        <input name="cep" id="cep">
 
                         <label for="address">Endereço Completo:</label>
                         <input type="text" name="address" id="address">
@@ -66,6 +66,7 @@
         </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
     <script src="../../scripts/cadastro.js"></script>
 </body>
 
