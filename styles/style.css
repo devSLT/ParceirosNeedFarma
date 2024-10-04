@@ -9,7 +9,7 @@
 
 a {
     color: inherit;
-    text-decoration: none;
+    text-decoration: none!important;
 }
 
 html {
@@ -175,7 +175,7 @@ swiper-slide img {
 
 .beneficios .boxCard-beneficios {
     width: 80%;
-    height: 90%;
+    height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -183,7 +183,7 @@ swiper-slide img {
 
 .beneficios .boxCard-beneficios .card-beneficios {
     width: 30%;
-    height: 80%;
+    height: 100%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
     justify-content: center;
@@ -234,8 +234,7 @@ swiper-slide img {
 /* Configuracao Planos */
 
 .planos {
-    width: 100%;
-    height: 65vh;
+    width: 100%;    
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -247,7 +246,6 @@ swiper-slide img {
 
 .title-planos {
     width: 80%;
-    height: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -260,8 +258,7 @@ swiper-slide img {
 }
 
 .boxCard-planos {
-    width: 70%;
-    height: 70%;
+    width: 75%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -423,12 +420,12 @@ swiper-slide img {
 .ad {
     width: 80%;
     height: 50vh;
-    background-color: #74B844;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border-radius: 15px;
+    background: linear-gradient(188deg, #74B844, #519382, #458697, #3271b9);
 }
 
 .ad h2 {
@@ -535,6 +532,10 @@ footer {
     font-weight: 400;
 }
 
+.dropQuestion{
+    font-size: 1.3rem!important;
+}
+
 /* Media queries */
 
 @media screen and (max-width:1600px) {
@@ -556,12 +557,152 @@ footer {
         width: 30%;
     }
 
+    .dropQuestion{
+        font-size: 1.1rem!important;
+    }
+
     /*Config footer */
 
     .opts-footer ul li img {
         width: 18px;
         height: 18px;
     }
+}
+
+@media screen and (max-width:1200px) {
+.beneficios {
+    width: 100%;
+    height: max-content;
+}
+
+.beneficios .title-beneficios h1 {
+    font-size: calc(1.2rem + 1vw);
+}
+
+.beneficios .boxCard-beneficios {
+    width: 90%;
+    height: 90%;
+    flex-direction: column;
+}
+
+.beneficios .boxCard-beneficios .card-beneficios {
+    width: 100%;
+    height: 50vh;
+    margin: 20px;
+    flex-direction: column;
+}
+
+.titleCard-beneficios h2 {
+    font-size: calc(0.7rem + 0.6vw);
+}
+
+.img-beneficios {
+    height: 45;
+}
+
+.text-beneficios p {
+    font-size: calc(0.7rem + 0.6vw);
+}
+/* Configuracao Planos */
+
+.planos {
+    width: 100%;
+}
+
+.title-planos {
+    width: 80%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-planos h2 {
+    font-size: calc(1.2rem + 1vw);
+    font-weight: 500;
+    color: white;
+}
+
+.boxCard-planos {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-planos {
+    width: 85%;
+    margin: 20px;
+}
+
+.card-planos .Hcard-planos h3 {
+    font-size: calc(0.8rem + 0.7vw);
+}
+
+.card-planos .Hcard-planos h4 {
+    color: rgb(0, 0, 0);
+    font-size: calc(0.6rem + 0.6vw);
+    font-weight: 400;
+}
+
+.card-planos .contentCard-planos ul li {
+    font-size: calc(0.6rem + 0.6vw);
+}
+/* Configuracoes duvidas */
+.duvidas {
+    margin-bottom: 10vh;
+}
+
+.title-duvidas {
+    width: 100%;
+    height: 10%;
+}
+
+.title-duvidas h2 {
+    font-size: calc(1.2rem + 1vw);
+}
+
+.boxDuvidas {
+    width: 85%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textDrop {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.6s ease, opacity 0.6s ease;
+}
+
+.textDrop p {
+    font-size: calc(0.5rem + 0.6vw);
+    text-align: justify;
+}
+.ad {
+    width: 100%;
+    height: 30vh;
+    border-radius: 0;
+}
+
+.ad h2 {
+    font-size: calc(1rem + 1vw);
+}
+
+.ad h3 {
+    font-size: calc(0.5rem + 0.6vw);
+}
+
+.ad a {
+    width: calc(50% + 30px);
+    background-color: rgb(255, 255, 255);
+    padding: 1.8vh;
+    font-size: calc(0.6rem + 0.6vw);
+}
 }
 
 @media screen and (max-width:860px) {
@@ -580,153 +721,8 @@ footer {
     .bannerBox{
         height: 60vh;
     }
-
-    /* Fim configuracao Banner */
-
-    /* About us */
-
-    /* Configuracao beneficios */
-
-    .beneficios {
-        width: 100%;
-        height: max-content;
-    }
-
-    .beneficios .title-beneficios h1 {
-        font-size: calc(1.2rem + 1vw);
-    }
-
-    .beneficios .boxCard-beneficios {
-        width: 90%;
-        height: 90%;
-        flex-direction: column;
-    }
-
-    .beneficios .boxCard-beneficios .card-beneficios {
-        width: 100%;
-        height: 50vh;
-        margin: 20px;
-        flex-direction: column;
-    }
-
-    .titleCard-beneficios h2 {
-        font-size: calc(0.7rem + 0.6vw);
-    }
-
-    .img-beneficios {
-        height: 45;
-    }
-
-    .text-beneficios p {
-        font-size: calc(0.7rem + 0.6vw);
-    }
-
-    /* Configuracao Planos */
-
-    .planos {
-        width: 100%;
-        height: max-content;
-    }
-
-    .title-planos {
-        width: 80%;
-        height: 10%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .title-planos h2 {
-        font-size: calc(1.2rem + 1vw);
-        font-weight: 500;
-        color: white;
-    }
-
-    .boxCard-planos {
-        width: 100%;
-        height: 70%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .card-planos {
-        width: 85%;
-        height: 35vh;
-        margin: 20px;
-    }
-
-    .card-planos .Hcard-planos h3 {
-        font-size: calc(0.8rem + 0.7vw);
-    }
-
-    .card-planos .Hcard-planos h4 {
-        color: rgb(0, 0, 0);
-        font-size: calc(0.6rem + 0.6vw);
-        font-weight: 400;
-    }
-
-    .card-planos .contentCard-planos ul li {
-        font-size: calc(0.6rem + 0.6vw);
-    }
-
-    /* Config AD */
-
-    .ad {
-        width: 100%;
-        height: 30vh;
-        border-radius: 0;
-    }
-
-    .ad h2 {
-        font-size: calc(1rem + 1vw);
-    }
-
-    .ad h3 {
-        font-size: calc(0.5rem + 0.6vw);
-    }
-
-    .ad a {
-        width: calc(50% + 30px);
-        background-color: rgb(255, 255, 255);
-        padding: 1.8vh;
-        font-size: calc(0.6rem + 0.6vw);
-    }
-
-    /* Configuracoes duvidas */
-
-    .duvidas {
-        margin-bottom: 10vh;
-    }
-
-    .title-duvidas {
-        width: 100%;
-        height: 10%;
-    }
-
-    .title-duvidas h2 {
-        font-size: calc(1.2rem + 1vw);
-    }
-
-    .boxDuvidas {
-        width: 85%;
-        height: 90%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .textDrop {
-        max-height: 0;
-        overflow: hidden;
-        opacity: 0;
-        transition: max-height 0.6s ease, opacity 0.6s ease;
-    }
-
-    .textDrop p {
-        font-size: calc(0.5rem + 0.6vw);
-        text-align: justify;
+    .dropQuestion{
+        font-size: 1rem!important;
     }
 
     /* Config Footer */
@@ -843,12 +839,10 @@ footer {
 
     .planos {
         width: 100%;
-        height: max-content;
     }
 
     .title-planos {
         width: 80%;
-        height: 10%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -862,7 +856,6 @@ footer {
 
     .boxCard-planos {
         width: 100%;
-        height: 70%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -871,7 +864,6 @@ footer {
 
     .card-planos {
         width: 85%;
-        height: 35vh;
         margin: 20px;
     }
 
