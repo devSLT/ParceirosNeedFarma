@@ -71,7 +71,19 @@ main {
 .boxInputs input {
     width: 80%;
     padding: 8px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: none;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}
+.boxInputs div{
+    width: 80%;
+}
+.boxInputs div input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
     background-color: transparent;
     border: none;
     border: 1px solid #ddd;
@@ -80,13 +92,13 @@ main {
 .field-icon {
     float: right;
     margin-left: 70%;
-    margin-top: -47px;
+    margin-top: -52px;
     position: relative;
     z-index: 2;
 }
 
 .boxInputs select{
-    width: 84%;
+    width: 80%;
     padding: 8px;
     margin-bottom: 15px;
     background-color: transparent;

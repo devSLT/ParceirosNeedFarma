@@ -10,7 +10,14 @@ botaoSub.addEventListener('submit', function (event) {
     const phone = document.getElementById("phone").value.replace(/\D/g,'').slice(2);
     const personalPhone = document.getElementById("personalPhone").value.replace(/\D/g,'').slice(2);
     const cnpj = document.getElementById('cnpj').value.replace(/\D/g,'');
-    const businessType = document.getElementById('businessType').value;
+    const businessTypeDropdown = document.getElementById('businessType').value;
+    let businessType = businessTypeDropdown;
+
+    if (businessTypeDropdown === "Outros") {
+        const otherBusinessType = document.getElementById('otherBusinessType');
+        businessType = otherBusinessType ? otherBusinessType.value : businessTypeDropdown;
+    }
+    
     const cep = document.getElementById('cep').value.replace(/\D/g,'');
     const address = document.getElementById('address').value;
     const password = document.getElementById('password').value;
@@ -82,4 +89,25 @@ $(document).ready(function() {
         };
 
     $('.sp_celphones').mask(SPMaskBehavior, spOptions);
+});
+
+document.getElementById('businessType').addEventListener('change', function () {
+    const outrosField = document.getElementById('outrosField');
+    if (this.value === 'Outros') {
+        // Check if input already exists, if not, create it
+        if (!document.getElementById('otherBusinessType')) {
+            const input = document.createElement('input');
+            input.type = 'text';
+            input.name = 'otherBusinessType';
+            input.id = 'otherBusinessType';
+            input.placeholder = 'Especifique o tipo de negócio';
+            outrosField.appendChild(input);
+        }
+    } else {
+        // Remove the input if it exists
+        const otherInput = document.getElementById('otherBusinessType');
+        if (otherInput) {
+            outrosField.removeChild(otherInput);
+        }
+    }
 });

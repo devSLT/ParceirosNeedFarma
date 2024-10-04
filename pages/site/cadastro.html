@@ -23,42 +23,34 @@
                 </div>
                 <div class="mainAcount">
                     <form action="" class="boxInputs" id="cadastroForm">
-                        <label for="businessName">Nome da Empresa:</label>
-                        <input type="text" name="businessName" id="businessName">
-
-                        <label for="email">E-mail:</label>
-                        <input type="email" name="email" id="email">
-
-                        <label for="phone">Telefone Comercial:</label>
-                        <input class="sp_celphones" type="text" name="telefone" id="phone">
-
-                        <label for="businessPhone">WhatsApp:</label>
-                        <input class="sp_celphones" type="text" name="telefone" id="personalPhone">
-
-                        <label for="cnpj">CNPJ:</label>
-                        <input name="cnpj" id="cnpj">
-
-                        <label for="businessType">Selecione a categoria do negócio:</label>
+                        <input type="text" name="businessName" id="businessName" placeholder="Nome da Empresa">
+                
+                        <input type="email" name="email" id="email" placeholder="E-mail">
+                
+                        <input class="sp_celphones" type="text" name="telefone" id="phone" placeholder="Telefone Comercial">
+                
+                        <input class="sp_celphones" type="text" name="telefone" id="personalPhone" placeholder="Telefone Pessoal">
+                
+                        <input name="cnpj" id="cnpj" placeholder="CNPJ">
+                
                         <select id="businessType" name="businessType">
+                            <option value="">Selecione a categoria do negócio:</option>
                             <option value="Farmácia/Drogaria">Farmácias & Drogarias</option>
-                            <option value="Distribuidora">Distribuidoras de medicamentos & Indústria farmacêutica
-                            </option>
+                            <option value="Distribuidora">Distribuidoras de medicamentos & Indústria farmacêutica</option>
                             <option value="Loja de suplementos">Lojas de Suplemento & Distribuidoras de Suplemento</option>
-                            <option value="Loja de beleza">Distribuidoras e lojas de produtos de Beleza, Higiene e
-                                Cuidados Pessoais</option>
+                            <option value="Loja de beleza">Distribuidoras e lojas de produtos de Beleza, Higiene e Cuidados Pessoais</option>
                             <option value="Outros">Outros</option>
                         </select>
-
-                        <label for="cep">CEP:</label>
-                        <input name="cep" id="cep">
-
-                        <label for="address">Endereço Completo:</label>
-                        <input type="text" name="address" id="address">
-
-                        <label for="password">Senha:</label>
-                        <input id="password" type="password" name="password">
+                
+                        <div id="outrosField"></div> <!-- This div will hold the dynamic input -->
+                
+                        <input name="cep" id="cep" placeholder="CEP">
+                
+                        <input type="text" name="address" id="address" placeholder="Endereço">
+                
+                        <input id="password" type="password" name="password" placeholder="Senha">
                         <span toggle="#password" class="bi bi-eye-fill field-icon toggle-password"></span>
-
+                
                         <button type="submit" style="margin-top: 5%;">Cadastrar-se</button>
                     </form>
                 </div>
