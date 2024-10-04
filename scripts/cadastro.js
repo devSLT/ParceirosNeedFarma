@@ -7,11 +7,18 @@ botaoSub.addEventListener('submit', function (event) {
 
     const businessName = document.getElementById('businessName').value;
     const email = document.getElementById('email').value;
-    const phone = document.getElementById('phone').value;
-    const personalPhone = document.getElementById('personalPhone').value;
-    const cnpj = document.getElementById('cnpj').value;
-    const businessType = document.getElementById('businessType').value;
-    const cep = document.getElementById('cep').value;
+    const phone = document.getElementById("phone").value.replace(/\D/g,'').slice(2);
+    const personalPhone = document.getElementById("personalPhone").value.replace(/\D/g,'').slice(2);
+    const cnpj = document.getElementById('cnpj').value.replace(/\D/g,'');
+    const businessTypeDropdown = document.getElementById('businessType').value;
+    let businessType = businessTypeDropdown;
+
+    if (businessTypeDropdown === "Outros") {
+        const otherBusinessType = document.getElementById('otherBusinessType');
+        businessType = otherBusinessType ? otherBusinessType.value : businessTypeDropdown;
+    }
+    
+    const cep = document.getElementById('cep').value.replace(/\D/g,'');
     const address = document.getElementById('address').value;
     const password = document.getElementById('password').value;
 
@@ -69,5 +76,38 @@ $(".toggle-password").click(function() {
         input.attr("type", "text");
     } else {
         input.attr("type", "password");
+    }
+});
+$(document).ready(function() {
+    var SPMaskBehavior = function(val) {
+            return val.replace(/\D/g, '').length === 13 ? '+55 (00) 00000-0000' : '+55 (00) 0000-00009';
+        },
+        spOptions = {
+            onKeyPress: function(val, e, field, options) {
+                field.mask(SPMaskBehavior.apply({}, arguments), options);
+            }
+        };
+
+    $('.sp_celphones').mask(SPMaskBehavior, spOptions);
+});
+
+document.getElementById('businessType').addEventListener('change', function () {
+    const outrosField = document.getElementById('outrosField');
+    if (this.value === 'Outros') {
+        // Check if input already exists, if not, create it
+        if (!document.getElementById('otherBusinessType')) {
+            const input = document.createElement('input');
+            input.type = 'text';
+            input.name = 'otherBusinessType';
+            input.id = 'otherBusinessType';
+            input.placeholder = 'Especifique o tipo de negócio';
+            outrosField.appendChild(input);
+        }
+    } else {
+        // Remove the input if it exists
+        const otherInput = document.getElementById('otherBusinessType');
+        if (otherInput) {
+            outrosField.removeChild(otherInput);
+        }
     }
 });

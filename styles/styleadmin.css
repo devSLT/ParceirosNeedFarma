@@ -5,6 +5,10 @@
     margin: 0;
     font-family: "Poppins", sans-serif!important;
 }
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 .img-bg {
     opacity: 0.4;
@@ -20,7 +24,8 @@
 .header{
     padding-left: 5%;
     padding-top: 2%;
-    height: 15vh;
+    padding-bottom: 1%;
+    width: 100%;
     background: rgb(43,113,182);
     background: linear-gradient(15deg, rgba(43,113,182,1) 0%, rgba(116,184,68,1) 85%);
 }

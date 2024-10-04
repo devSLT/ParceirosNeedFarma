@@ -78,6 +78,7 @@ main{
     border:1px solid #ddd;
     border-radius: 15px;
     color: rgb(0, 0, 0);
+    font-size: 1rem;
 }
 
 .boxInputs label{
@@ -125,21 +126,12 @@ main{
     width: 5%;
 }
 
-.boxInputs div input{
-    width: 80%;
-    padding: 10px;
-    margin-bottom: 20px;
-    background-color: transparent;
-    border: none;
-    border:1px solid #ddd;
-    border-radius: 15px;
-    color: rgb(0, 0, 0);
-}
-
-.boxInputs div label{
-    font-size: calc(0.4rem + 0.5vw);
-    align-self: self-start;
-    margin-left: 80px;
+.field-icon {
+    float: right;
+    margin-left: 74%;
+    margin-top: -55px;
+    position: relative;
+    z-index: 2;
 }
 
 .boxInputs ul li a{
