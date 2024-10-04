@@ -78,6 +78,7 @@ main{
     border:1px solid #ddd;
     border-radius: 15px;
     color: rgb(0, 0, 0);
+    font-size: 1rem;
 }
 
 .boxInputs label{
@@ -128,7 +129,7 @@ main{
 .field-icon {
     float: right;
     margin-left: 74%;
-    margin-top: -52px;
+    margin-top: -55px;
     position: relative;
     z-index: 2;
 }
