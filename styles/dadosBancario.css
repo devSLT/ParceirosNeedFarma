@@ -49,7 +49,18 @@ header {
     border-bottom: 1px solid;
     outline: none;
 }
+.inputsInfo div input {
+    width: 65%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid;
+    outline: none;
+}
 
+.inputsInfo div{
+    width: 100%;
+    margin-left: 35%;
+}
 .inputsInfo select{
     width: 65%;
     background-color: transparent;
