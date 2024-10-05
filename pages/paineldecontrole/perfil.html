@@ -18,28 +18,21 @@
 <body>
     <div class="container-fluid">
         <div class="row flex-nowrap">
-            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-white shadow z-1">
-                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-black min-vh-100">
-                    <a href="./paineldecontrole.html"
-                        class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                        <span class="fs-4 d-none d-sm-inline mt-4">Menu Administrativo</span>
-                    </a>
-                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
-                        id="menu">
-                        <li class="nav-item">
-                            <a href="./paineldecontrole.html" class="nav-link align-middle px-0">
-                                <i class="fs-3 bi-house-door-fill text-dark fw-semibold"></i>
-                                <span class="fs-5 ms-1 d-none d-sm-inline text-dark fw-semibold">Geral</span>
-                            </a>
-                        </li>
+            <div class="px-0 bg-white shadow z-1 position-fixed sidebar">
+                <div class="d-flex flex-column px-3 pt-2 text-black min-vh-100">
+                  <a href="./dadosBancarios.html"
+                    class="d-flex align-items-center pb-3 text-dark text-decoration-none">
+                    <span class="fs-4 mt-4">Menu Administrativo</span>
+                  </a>
+                  <ul class="nav nav-pills flex-column mb-0 align-items-left" id="menu">
                         <li>
                             <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
                                 <i class="fs-3 bi-bar-chart-line-fill text-dark fw-semibold"></i>
-                                <span class="fs-5 ms-1 d-none d-sm-inline text-dark fw-semibold">Gestão</span>
+                                <span class="fs-5 ms-1col-10 text-dark fw-semibold">Gestão</span>
                             </a>
                             <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
                                 <li class="w-100">
-                                    <a href="#" class="nav-link px-0">
+                                    <a href="./produtos.html" class="nav-link px-0">
                                         <span class="d-none d-sm-inline text-dark mx-3">Gestão de Produtos</span>
                                     </a>
                                 </li>
@@ -58,31 +51,97 @@
                         <li class="nav-item">
                             <a href="./perfil.html" class="nav-link align-middle px-0">
                                 <i class="bi bi-person-fill fs-3   text-primary fw-semibold"></i>
-                                <span class="fs-5 ms-1 d-none d-sm-inline text-primary fw-semibold">Perfil</span>
+                                <span class="fs-5 ms-1col-10 text-primary fw-semibold">Perfil</span>
                             </a>
                         </li>
                         <li class="nav-item"></li>
                         <a href="./dadosBancarios.html" class="nav-link align-middle px-0">
-                            <i class="bi bi-cash fs-3   text-dark fw-semibold"></i>
-                            <span class="fs-5 ms-1 d-none d-sm-inline text-dark fw-semibold">Banco</span>
+                            <i class="bi bi-cash fs-3    text-dark fw-semibold"></i>
+                            <span class="fs-5 ms-1col-10  text-dark fw-semibold">Banco</span>
                         </a>
                         </li>
                     </ul>
-                    <hr />
-                    <a href="../../index.html" class="w-100"><button class="btn btn-primary border-0 w-100 mb-3">Voltar</button></a>
+                  <div class="mt-auto w-100">
+                    <a href="../../index.html" class="w-100">
+                      <button class="btn btn-primary border-0 w-100 mb-3">Voltar</button>
+                    </a>
                     <button class="btn btn-primary border-0 w-100 mb-3" id="signout">Sign Out</button>
+                  </div>
                 </div>
             </div>
-            <div class="col py-3 bg-light p-0 pt-0">
+            <div class="col py-3 bg-light p-0 pt-0 mainContent" style="height: 100vh">
                 <img class="img-bg" src="../../images/logo/logo-svg.svg" />
-                <div class="header">
-                    <p class="fs-3 text-white fw-semibold">
-                        <i>Informações Pessoais</i>
+                <div class="row header">
+                    <div class="col"><p class="fs-3 text-white fw-semibold">
+                      <i>Perfil</i>
                     </p>
                     <p class="fs-5 text-white fw-light" id="dayText">
-                        <i><i class="bi bi-brightness-high"></i> Segunda, 26 de
-                            Setembro</i>
+                      <i><i class="bi bi-brightness-high"></i> Segunda, 26 de
+                        Setembro</i>
                     </p>
+                  </div>
+                  <button class="btn col-1 h-50 me-5 mt-3 text-white border-0 sidebarRevealer fs-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="bi bi-list"></i></button>
+                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="static" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel" style="width: 300px">
+                      <div class="offcanvas-header">
+                        <a href="./dadosBancarios.html"
+                          class="d-flex align-items-center pb-3 text-dark text-decoration-none">
+                          <span class="fs-4 mt-4">Menu Administrativo</span>
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body">
+                        <ul class="nav nav-pills flex-column mb-0 align-items-left" id="menu">
+                            <li class="nav-item">
+                                <a href="./paineldecontrole.html" class="nav-link align-middle px-0">
+                                    <i class="fs-3 bi-house-door-fill text-dark fw-semibold"></i>
+                                    <span class="fs-5 ms-1 text-dark fw-semibold">Geral</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                    <i class="fs-3 bi-bar-chart-line-fill text-dark fw-semibold"></i>
+                                    <span class="fs-5 ms-1col-10 text-dark fw-semibold">Gestão</span>
+                                </a>
+                                <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
+                                    <li class="w-100">
+                                        <a href="#" class="nav-link px-0">
+                                            <span class="d-none d-sm-inline text-dark mx-3">Gestão de Produtos</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0">
+                                            <span class="d-none d-sm-inline text-dark mx-3">Gestão de Pedidos</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0">
+                                            <span class="d-none d-sm-inline text-dark mx-3">Gestão de Faturamento</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./perfil.html" class="nav-link align-middle px-0">
+                                    <i class="bi bi-person-fill fs-3   text-dark fw-semibold"></i>
+                                    <span class="fs-5 ms-1col-10 text-dark fw-semibold">Perfil</span>
+                                </a>
+                            </li>
+                            <li class="nav-item"></li>
+                            <a href="./dadosBancarios.html" class="nav-link align-middle px-0">
+                                <i class="bi bi-cash fs-3    text-primary fw-semibold"></i>
+                                <span class="fs-5 ms-1col-10  text-primary fw-semibold">Banco</span>
+                            </a>
+                            </li>
+                        </ul>
+                        <hr class="mt-3 mb-5">
+                        <div class="mt-5 w-100">
+                          <a href="../../index.html" class="w-100">
+                            <button class="btn btn-primary border-0 w-100 mb-3">Voltar</button>
+                          </a>
+                          <button class="btn btn-primary border-0 w-100 mb-3" id="signout">Sign Out</button>
+                        </div>
+                      </div>
+                    </div>
                 </div>
                 <!-- ////////////// INICIO MAIN ////////////// -->
                 <!-- Card dados -->
@@ -90,7 +149,7 @@
                     <div class="boxInfomacoes">
                         <div class="boxInfoP">
                             <div class="titleInfoP">
-                                <h2>Informações Pessoais</h2>
+                                <h2 class="fs-3">Informações Pessoais</h2>
                             </div>
                             <div class="inputsInfo">
 
@@ -101,12 +160,16 @@
                                 <input type="password" name="password" id="password" class="senha" placeholder="Senha">
                             </div>
                         </div>
+                        <div class="boxSaveInfosMobile boxSaveInfos">
+                            <button class="fs-5 p-3">Salvar Informações</button>
+                        </div>
                         <div class="boxDocuments">
                             <div class="titleInfoP">
-                                <h2>Documentos</h2>
+                                <h2 class="fs-3">Documentos</h2>
                             </div>
 
                             <div class="inputDocument">
+                                <input type="text" name="businessName" maxlength="50" placeholder="Nome da empresa">
                                 <input type="text" name="cnpj" id="cnpj" placeholder="CNPJ">
                                 <input type="text" name="cep" id="cep" placeholder="CEP">
                                 <input type="text" name="address" id="address" placeholder="Endereço Completo">
@@ -114,17 +177,17 @@
                                     pattern="[0-9a-zA-Z.\-]{7,14}" required>
                             </div>
                         </div>
-                        <div class="boxSaveInfos">
-                            <button>Salvar Informações</button>
+                        <div class="boxSaveInfosWide boxSaveInfos">
+                            <button class="fs-4 p-3">Salvar Informações</button>
                         </div>
                         <div class="boxSendDocuments">
                             <form method="POST" enctype="multipart/form-data">
                                 <div id="fileDisplay" class="file-info"></div>
                                 <div class="boxUpload">
-                                    <label for="fileUpload">Adicionar Documentos & Licença</label>
+                                    <label for="fileUpload" class="fs-6 text-center">Adicionar Documentos & Licença</label>
                                     <input type="file" id="fileUpload" name="files[]" multiple
                                         accept=".docx, .pdf, .jpeg, .jpg, .png" />
-                                    <button type="submit">Salvar</button>
+                                    <button type="submit" class="fs-6">Salvar</button>
                                 </div>
                             </form>
                         </div>

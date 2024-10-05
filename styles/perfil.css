@@ -99,9 +99,7 @@ header {
 }
 
 .file-info {
-    width: 100%;
-    height: 70%;
-    max-height: 80%;
+    width: 80%;
     display: none;
     flex-direction: row;
     align-items: center;
@@ -117,6 +115,7 @@ header {
     align-items: center;
     justify-content: center;
 }
+
 
 label {
     display: inline-block;
@@ -184,7 +183,7 @@ button[type="submit"]:hover {
 
 .boxSaveInfos {
     width: 50%;
-    height: 50%;
+    height: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,7 +191,7 @@ button[type="submit"]:hover {
 
 .boxSaveInfos button{
     width: 40%;
-    height: 25%;
+    height: 50%;
     background-color: #007bff;
     color: white;
     font-size:calc(0.6rem + 0.5vw);
@@ -205,4 +204,158 @@ button[type="submit"]:hover {
 .boxSaveInfos button:hover{
     scale: 1.05;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.boxSaveInfosMobile{
+    display: none;
+}
+.boxSaveInfosWide{
+    display: flex;
+}
+@media screen and (max-width:1600px){
+    .boxSaveInfosMobile{
+        display: none!important;
+    }
+    .boxSaveInfosWide{
+        display: flex;
+    }
+    .boxSaveInfos {
+        width: 50%;
+        height: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .boxSaveInfos button{
+        width: 60%;
+        height: 50%;
+        background-color: #007bff;
+        color: white;
+        font-size:calc(0.6rem + 0.5vw);
+        border-radius: 15px;
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        transition: 0.3s;
+    }
+    
+    .boxSaveInfos button:hover{
+        scale: 1.05;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+}
+@media screen and (max-width:1200px){
+    .boxSaveInfosMobile{
+        display: none!important;
+    }
+    .boxSaveInfosWide{
+        display: flex;
+    }
+    .boxSaveInfos {
+        width: 50%;
+        height: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-wrap: nowrap;
+    }
+    
+    .boxSaveInfos button{
+        width: 70%;
+        height: 50%;
+        background-color: #007bff;
+        color: white;
+        font-size:calc(0.6rem + 0.5vw);
+        border-radius: 15px;
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        transition: 0.3s;
+    }
+    
+    .boxSaveInfos button:hover{
+        scale: 1.05;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .boxUpload{
+        flex-direction: column;
+    }
+    .boxUpload label{
+        max-width: 70%;
+    }
+    .boxUpload button{
+        margin-top: 1vh;
+    }
+}
+@media screen and (max-width:600px){
+
+    .boxUpload{
+        height: max-content;
+    }
+    .boxSendDocuments {
+        height: max-content;
+    }
+    .boxSendDocuments form {
+        height: max-content;
+    }
+    .boxInfoP {
+        height: max-content;
+    }
+    .boxDocuments {
+        height: max-content;
+    }
+    .inputDocument {
+        height: max-content;
+    }
+    .boxMain {
+        height: max-content;
+    }
+    .boxInfomacoes {
+        height: max-content;
+    }
+    .titleInfoP {
+        height: max-content;
+    }
+    .inputsInfo {
+        height: max-content;
+    }
+    .inputsInfo input{
+        margin-top: 3%;
+    }
+    
+    .inputDocument input{
+        margin-top: 3%;
+    }
+    .boxSaveInfosMobile{
+        display: flex!important;
+    }
+    .boxSaveInfosWide{
+        display: none;
+    }
+    .boxInfomacoes {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .boxInfoP {
+        width: 100%;
+        height: 100%;
+        margin-top: 5%;
+    }
+    .boxSaveInfos {
+        width: 100%;
+        height: 70%;
+        margin-top: 10%;
+    }
+    .boxDocuments {
+        width: 100%;
+        height: 100%;
+        margin-top: 10%;
+    }
+    .boxSendDocuments {
+        width: 90%;
+        margin-left: 5%;
+        order: 4;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
 }
