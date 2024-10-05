@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="278.8345" height="293.8741"><svg viewBox="1241.5967 264.6317 278.8345 293.8741" xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(0.9900000095367432, 0, 0, -0.9900000095367432, 1338.280517578125, 396.3912048339844)" id="SvgjsG1048" clip-path="url(#CLIPPATH_12)">
+    <clipPath id="SvgjsClipPath1047">
+      <path transform="matrix(1 0 0 1 801.79 -719.45) translate(-1500, -1500)" id="SvgjsPath1046" d="M 0 3000 L 3000 3000 L 3000 0 L 0 0 Z" stroke-linecap="round"></path>
+    </clipPath>
+    <path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(55,113,184); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(97.66, 83.5)" d="M 0 0 C -30.879 48.338 -94.743 64.229 -143.943 34.743 C -195.14600000000002 4.057000000000002 -210.651 -62.85399999999999 -178.727 -112.827 L -117.582 -208.54500000000002 C -112.40199999999999 -216.65400000000002 -101.62899999999999 -219.02800000000002 -93.52 -213.848 C -85.411 -208.668 -83.03699999999999 -197.895 -88.217 -189.786 L -149.363 -94.068 C -170.858 -60.419 -160.273 -15.310000000000002 -125.57 5.128 C -125.57 5.128 -71.22899999999998 41.142 0 0" stroke-linecap="round"></path>
+  </g>
+  <g transform="matrix(0.9900000095367432, 0, 0, -0.9900000095367432, 1415.450439453125, 426.3211975097657)" id="SvgjsG1045" clip-path="url(#CLIPPATH_13)">
+    <clipPath id="SvgjsClipPath1044">
+      <path transform="matrix(1 0 0 1 723.66 -689.14) translate(-1500, -1500)" id="SvgjsPath1043" d="M 0 3000 L 3000 3000 L 3000 0 L 0 0 Z" stroke-linecap="round"></path>
+    </clipPath>
+    <path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(118,182,67); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(89.45, 4.36)" d="M 0 0 L -69.914 109.444 C -141.143 150.586 -195.48399999999998 114.572 -195.48399999999998 114.572 C -162.52299999999997 133.984 -120.00999999999998 123.13900000000001 -99.41699999999999 90.902 L -61.665 31.804 L -106.676 3.051 C -114.785 -2.1289999999999996 -117.159 -12.902 -111.979 -21.011000000000003 L -111.979 -21.011000000000003 C -106.799 -29.120000000000005 -96.026 -31.494000000000003 -87.918 -26.314000000000004 L -42.906000000000006 2.4389999999999965 L -29.365000000000006 -18.759000000000004 C -10.948000000000004 -47.587 -16.081000000000003 -84.828 -39.75300000000001 -107.759 C -45.76200000000001 -113.58 -46.982000000000006 -122.758 -42.47800000000001 -129.809 L -42.47800000000001 -129.809 C -36.58800000000001 -139.029 -23.69900000000001 -140.663 -15.81000000000001 -133.083 C 19.771 -98.898 27.554 -43.134 0 0" stroke-linecap="round"></path>
+  </g>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: none; } }
+</style></svg>
