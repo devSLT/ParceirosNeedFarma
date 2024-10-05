@@ -2,6 +2,23 @@ import checkMain from './home.js'
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
+async function populateDashboard() {
+    try {
+        const response = await fetch('https://api-parceiros.onrender.com/table/dashboard');
+        const dashboardData = await response.json();
+
+        // Populate the h2 tags with the dashboard data
+        document.getElementById('dashB1').textContent = dashboardData.total;
+        document.getElementById('dashB2').textContent = dashboardData.users;
+        document.getElementById('dashB3').textContent = dashboardData.userDenieds;
+        document.getElementById('dashB4').textContent = dashboardData.userAnalises;
+        document.getElementById('dashB5').textContent = dashboardData.userDocs;
+
+    } catch (error) {
+        console.error('Error fetching dashboard data:', error);
+    }
+}
+
 // Fetch data and populate the table
 async function populateTable() {
     try {
@@ -255,6 +272,7 @@ window.onload = function () {
     const token = localStorage.getItem('token');
     checkMain(token)
     populateTable();
+    populateDashboard();
 
     signout.addEventListener('click', () => {
         localStorage.removeItem('token');
