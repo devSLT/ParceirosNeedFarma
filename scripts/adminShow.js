@@ -79,9 +79,9 @@ async function populateTable() {
 
                 // Accept Button (bi-check-lg) for undeny
                 const acceptButton = document.createElement('button');
-                acceptButton.classList.add('btn', 'btn-sm', 'border-primary', 'acceptButton');
+                acceptButton.classList.add('btn', 'btn-sm', 'border-warning', 'acceptButton');
                 acceptButton.id = `accept-${index}`; // Dynamic ID for accept button
-                acceptButton.innerHTML = '<i class="bi bi-check-lg text-primary"></i>';
+                acceptButton.innerHTML = '<i class="bi bi-check-lg text-warning"></i>';
                 acceptButton.addEventListener('click', () => handleUndeny(item.id)); // Add click event for undeny
 
                 optionsCell.appendChild(acceptButton);
@@ -134,7 +134,7 @@ async function populateTable() {
                 layout: {
                     topStart: {
                         pageLength: {
-                            menu: [10, 25, 50, 100]
+                            menu: [5, 10, 25, 50, 100]
                         },
                     },
                     topEnd: {
