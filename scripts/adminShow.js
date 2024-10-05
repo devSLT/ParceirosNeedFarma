@@ -109,6 +109,8 @@ async function populateTable() {
         }
         else {
             let table = new DataTable('#usersTable', {
+                scrollX: true,
+                responsive: true,
                 "language": {
                     "decimal": "",
                     "emptyTable": "Sem dados para mostrar nessa tabela.",
@@ -117,7 +119,7 @@ async function populateTable() {
                     "infoFiltered": "(filtrado de _MAX_ linhas)",
                     "infoPostFix": "",
                     "thousands": ",",
-                    "lengthMenu": "Mostrar _MENU_ linhas⠀⠀⠀⠀⠀⠀⠀⠀Exportar:",
+                    "lengthMenu": "Mostrar _MENU_ linhas",
                     "loadingRecords": "Carregando...",
                     "processing": "",
                     "search": "Filtrar:",
@@ -134,7 +136,18 @@ async function populateTable() {
                         pageLength: {
                             menu: [10, 25, 50, 100]
                         },
-                        buttons: ['csv', 'excel', 'pdf']
+                    },
+                    topEnd: {
+                        buttons: [
+                            {
+                                extend: 'collection',
+                                text: 'Exportar:',
+                                buttons: ['csv', 'excel', 'pdf']
+                            }
+                        ],
+                        search: {
+                            boundary: true
+                        }
                     }
                 }
             });

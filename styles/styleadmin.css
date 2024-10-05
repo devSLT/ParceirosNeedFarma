@@ -25,8 +25,6 @@ html, body {
     padding-left: 5%;
     padding-top: 2%;
     padding-bottom: 1%;
-    width: 100%;
-    background: rgb(43,113,182);
     background: linear-gradient(15deg, rgba(43,113,182,1) 0%, rgba(116,184,68,1) 85%);
 }
 
@@ -40,4 +38,94 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+.sidebar{
+  width: 16%;
+}
+.mainContent{
+  margin-left: 16%;
+}
+.sidebarRevealer{
+  display: none;
+}
+@media screen and (max-width:1680px) {
+  .sidebar{
+    width: 18%;
+  }
+  .mainContent{
+    margin-left: 18%;
+  }
+}
+@media screen and (max-width:1460px) {
+  .sidebar{
+    width: 20%;
+  }
+  .mainContent{
+    margin-left: 20%;
+  }
+}
+@media screen and (max-width:1340px) {
+  .sidebar{
+    width: 22%;
+  }
+  .mainContent{
+    margin-left: 22%;
+  }
+}
+@media screen and (max-width:1220px) {
+  .sidebar{
+    width: 24%;
+  }
+  .mainContent{
+    margin-left: 24%;
+  }
+}
+
+@media screen and (max-width:1120px) {
+  .sidebar{
+    width: 26%;
+  }
+  .mainContent{
+    margin-left: 26%;
+  }
+}
+@media screen and (max-width:1040px) {
+  .sidebar{
+    width: 28%;
+  }
+  .mainContent{
+    margin-left: 28%;
+  }
+}
+@media screen and (max-width:960px) {
+  .sidebar{
+    width: 30%;
+  }
+  .mainContent{
+    margin-left: 30%;
+  }
+}
+@media screen and (max-width:900px) {
+  .sidebar{
+    display: none;
+  }
+  .mainContent{
+    margin-left: 0%;
+  }
+  .sidebarRevealer{
+    display: inline;
+  }
+}
+@media screen and (max-width:550px) {
+  .header{
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+  }
+}
+@media screen and (max-width:350px) {
+  .header div p{
+    font-size: 1.2rem!important;
+  }
 }
