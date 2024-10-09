@@ -29,7 +29,7 @@ document.getElementById('sendLinkPass').addEventListener('submit', (event) => {
 
         })
         .catch(error => {
-            console.error('Erro:', error);
+             console.error('Erros:', error);
             alert('Ocorreu um erro ao enviar o link. Tente novamente mais tarde.');
         });
 
