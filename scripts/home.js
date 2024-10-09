@@ -127,7 +127,7 @@ window.onload = function () {
                     //http://127.0.0.1:5501/pages/paineldecontrole/paineldecontrole.html
                     break;
                 default:
-                    cHeader.innerHTML = `<li><a class="dropdown-item" href="https://parceiros-need-farma.vercel.app/pages/paineldecontrole/paineldecontrole.html">Painel de Controle</a></li>`;
+                    cHeader.innerHTML = `<li><a class="dropdown-item" href="https://parceiros-need-farma.vercel.app/pages/adm/adminhome.html">Painel de Controle</a></li>`;
                     break;
             }
         })
